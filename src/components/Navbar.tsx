@@ -47,13 +47,13 @@ const Navbar = () => {
   ];
 
   const scrapMetalLinks = [
-    
+    { name: 'AC Units', path: '/scrap-ac-units' },
     { name: 'Cable Wires', path: '/cable-wires' },
     { name: 'Catalytic Converter', path: '/catalytic-converter' },
     { name: 'Battery', path: '/car-battery-disposal' },
     { name: 'Stainless Steel ', path: '/stainless-steel-scrap-price' },
     { name: 'Bin Service', path: '/scrap-bin-service' },
-    { name: 'AC Units', path: '/scrap-ac-units' },
+    
     
   ];
 
