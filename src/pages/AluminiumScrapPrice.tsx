@@ -15,13 +15,6 @@ const AluminiumScrapPrice = () => {
       price: 'Premium Rate'
     },
     {
-      name: 'Aluminum Cans',
-      grade: 'UBC (Used Beverage Cans)',
-      description: 'Empty aluminum beverage cans. One of the most commonly recycled aluminum materials with excellent market value.',
-      examples: ['Soft drink cans', 'Beer cans', 'Energy drink cans', 'Beverage packaging'],
-      price: 'Standard Market Rate'
-    },
-    {
       name: 'Cast Aluminum',
       grade: 'Cast Grade',
       description: 'Aluminum castings from automotive, machinery, and industrial applications. Heavier and denser than extrusions.',
@@ -34,13 +27,6 @@ const AluminiumScrapPrice = () => {
       description: 'Aluminum alloy wheels from vehicles. Must be free of steel, rubber, and weights for best pricing.',
       examples: ['Car wheels', 'Truck rims', 'Motorcycle wheels', 'Alloy rims'],
       price: 'Good Market Rate'
-    },
-    {
-      name: 'Aluminum Siding & Gutters',
-      grade: 'Building Aluminum',
-      description: 'Aluminum building materials including siding, gutters, and roofing materials. Should be free of paint and contamination for premium pricing.',
-      examples: ['Aluminum siding', 'Rain gutters', 'Downpipes', 'Roofing sheets', 'Fascia boards'],
-      price: 'Standard Rate'
     },
     {
       name: 'Aluminum Wire & Cable',

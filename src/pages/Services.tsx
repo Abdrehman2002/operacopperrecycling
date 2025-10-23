@@ -7,6 +7,10 @@ import brassScrap from '@/assets/brass-scrap.jpg';
 import aluminumScrap from '@/assets/aluminum-scrap.jpg';
 import stainlessSteel from '@/assets/stainless-steel.jpg';
 import copperMaterials from '@/assets/copper-materials.jpg';
+import acImage from '@/assets/ac 2.jpeg';
+import batteriesImage from '@/assets/batteries.png';
+import catalyticConverterImage from '@/assets/catalytic converter.jpeg';
+import rimsImage from '@/assets/rims.png';
 
 const Services = () => {
   const services = [
@@ -79,6 +83,62 @@ const Services = () => {
       ],
       image: copperMaterials,
       link: '/non-ferrous-metal',
+    },
+    {
+      title: 'Air Conditioner Recycling',
+      description: 'We responsibly recycle air conditioning units, recovering valuable metals like copper and aluminum while ensuring environmentally safe disposal of refrigerants and other components.',
+      features: [
+        'Split system air conditioners',
+        'Ducted AC systems',
+        'Window AC units',
+        'Commercial HVAC equipment',
+        'Industrial cooling systems',
+        'Portable air conditioners',
+      ],
+      image: acImage,
+      link: '/scrap-ac-units',
+    },
+    {
+      title: 'Battery Recycling',
+      description: 'Our battery recycling service helps prevent hazardous waste and recovers reusable materials from used car and industrial batteries. Safe, eco-friendly processing of all battery types.',
+      features: [
+        'Car batteries',
+        'Truck batteries',
+        'Industrial batteries',
+        'Lead acid batteries',
+        'Heavy-duty batteries',
+        'Commercial vehicle batteries',
+      ],
+      image: batteriesImage,
+      link: '/car-battery-disposal',
+    },
+    {
+      title: 'Catalytic Converter Recycling',
+      description: 'We specialize in recycling catalytic converters, extracting precious metals including platinum, palladium, and rhodium through safe, eco-friendly methods with competitive pricing.',
+      features: [
+        'Car catalytic converters',
+        'Truck catalytic converters',
+        'Industrial catalytic converters',
+        'Diesel catalytic converters',
+        'Hybrid vehicle converters',
+        'Heavy machinery converters',
+      ],
+      image: catalyticConverterImage,
+      link: '/catalytic-converter',
+    },
+    {
+      title: 'Rim Recycling',
+      description: 'We collect and recycle alloy and steel rims from vehicles, helping reduce waste while reclaiming high-quality metal for reuse. Competitive rates for all rim types.',
+      features: [
+        'Alloy wheels',
+        'Steel rims',
+        'Chrome wheels',
+        'Aluminum wheels',
+        'Motorcycle wheels',
+        'Truck and commercial rims',
+      ],
+      image: rimsImage,
+      link: '/services',
     },
   ];
 

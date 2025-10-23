@@ -10,7 +10,7 @@ const ScrapACUnits = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Scrap AC Units Melbourne</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
-            Cash for scrap air conditioning units in Melbourne. We buy old AC units, split systems, and HVAC equipment. Environmentally responsible recycling and competitive prices.
+            Professional scrap air conditioning recycling in Melbourne. We buy old AC units, split systems, and HVAC equipment. Environmentally responsible recycling and competitive prices.
           </p>
         </div>
       </section>

@@ -8,9 +8,9 @@ const CashForScrapCarsMelbourne = () => {
     <div className="min-h-screen">
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Cash For Scrap Cars Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Scrap Car Recycling Melbourne</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
-            Get cash for your scrap car in Melbourne. We buy all makes and models - running or not. Free towing, instant payment, and environmentally responsible car recycling.
+            Professional scrap car recycling in Melbourne. We buy all makes and models - running or not. Free towing, instant payment, and environmentally responsible car recycling.
           </p>
         </div>
       </section>
@@ -45,8 +45,8 @@ const CashForScrapCarsMelbourne = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="p-6 text-center">
                 <FiDollarSign className="w-12 h-12 text-secondary mx-auto mb-3" />
-                <h3 className="font-heading font-semibold text-lg mb-2">Cash Payment</h3>
-                <p className="text-sm text-muted-foreground">Instant payment on collection</p>
+                <h3 className="font-heading font-semibold text-lg mb-2">Instant Payment</h3>
+                <p className="text-sm text-muted-foreground">Quick payment on collection</p>
               </Card>
               <Card className="p-6 text-center">
                 <FiTruck className="w-12 h-12 text-secondary mx-auto mb-3" />
@@ -109,7 +109,7 @@ const CashForScrapCarsMelbourne = () => {
                   <span className="flex-shrink-0 w-8 h-8 bg-secondary text-primary-foreground rounded-full flex items-center justify-center font-bold">4</span>
                   <div>
                     <h4 className="font-semibold mb-1">Get Paid</h4>
-                    <p className="text-muted-foreground text-sm">Receive cash payment when we collect your vehicle</p>
+                    <p className="text-muted-foreground text-sm">Receive instant payment when we collect your vehicle</p>
                   </div>
                 </div>
               </div>
@@ -120,7 +120,7 @@ const CashForScrapCarsMelbourne = () => {
 
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get Cash for Your Scrap Car Today</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Recycle Your Scrap Car Today</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed">
             Contact Opera Copper Recycling for a free quote on your scrap car. We offer competitive prices and free towing across Melbourne.
           </p>

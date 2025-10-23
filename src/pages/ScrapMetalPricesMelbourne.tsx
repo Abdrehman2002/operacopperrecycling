@@ -5,26 +5,25 @@ import { FiDollarSign, FiTruck, FiCheck, FiPhone, FiMapPin, FiClock, FiTrendingU
 
 const ScrapMetalPricesMelbourne = () => {
   const metalPrices = [
-    { metal: 'Copper (Millberry)', price: '$11.00 – $12.50', description: 'Bare bright uncoated copper wire' },
-    { metal: 'Copper Scrap', price: '$7.00 – $12.50', description: 'Clean copper pipe, sheet, bus bar' },
-    { metal: 'Copper (Domestic)', price: '$6.00 – $9.00', description: 'Mixed household copper' },
-    { metal: 'Copper (Burnt/Tinned)', price: '$2.50 – $7.00', description: 'Burnt or tinned copper wire' },
-    { metal: 'Brass (Clean)', price: '$6.50', description: 'Clean brass fittings, fixtures' },
-    { metal: 'Brass (Contaminated)', price: '$4.00 – $5.00', description: 'Mixed or contaminated brass' },
-    { metal: 'Brass Scrap', price: '$4.50 – $6.50', description: 'General brass materials' },
-    { metal: 'Aluminium Extruded', price: '$1.60 – $2.10', description: 'Clean aluminum profiles' },
-    { metal: 'Aluminium Wheels', price: '$1.60 – $2.10', description: 'Aluminum alloy wheels' },
-    { metal: 'Aluminium Cuttings', price: '$1.30 – $1.90', description: 'Aluminum machining scrap' },
-    { metal: 'Aluminium Cast', price: '$1.10 – $1.20', description: 'Cast aluminum parts' },
-    { metal: 'Aluminium Domestic', price: '$0.80 – $1.10', description: 'Household aluminum items' },
-    { metal: 'Aluminium Scrap', price: '$0.90 – $2.00', description: 'Mixed aluminum materials' },
-    { metal: 'Stainless Steel', price: '$0.80 – $2.00', description: 'All grades of stainless steel' },
-    { metal: 'Insulated Wire (Medium)', price: '$4.00 – $5.00', description: 'Medium grade insulated wire' },
-    { metal: 'Insulated Wire (Low)', price: '$2.50 – $4.50', description: 'Low grade insulated wire' },
-    { metal: 'Lead (Clean)', price: '$1.50', description: 'Clean lead sheet, pipe' },
-    { metal: 'Lead Scrap', price: '$1.20 – $1.50', description: 'Lead batteries, mixed lead' },
-    { metal: 'Steel (Heavy)', price: '$0.25 – $0.34', description: 'Heavy structural steel' },
-    { metal: 'Steel (Normal)', price: '$0.15', description: 'Standard mild steel' },
+    { metal: 'Copper (Millberry)', description: 'Bare bright uncoated copper wire' },
+    { metal: 'Copper Scrap', description: 'Clean copper pipe, sheet, bus bar' },
+    { metal: 'Copper (Domestic)', description: 'Mixed household copper' },
+    { metal: 'Copper (Burnt/Tinned)', description: 'Burnt or tinned copper wire' },
+    { metal: 'Brass (Clean)', description: 'Clean brass fittings, fixtures' },
+    { metal: 'Brass (Contaminated)', description: 'Mixed or contaminated brass' },
+    { metal: 'Brass Scrap', description: 'General brass materials' },
+    { metal: 'Aluminium Extruded', description: 'Clean aluminum profiles' },
+    { metal: 'Aluminium Wheels', description: 'Aluminum alloy wheels' },
+    { metal: 'Aluminium Cuttings', description: 'Aluminum machining scrap' },
+    { metal: 'Aluminium Cast', description: 'Cast aluminum parts' },
+    { metal: 'Aluminium Scrap', description: 'Mixed aluminum materials' },
+    { metal: 'Stainless Steel', description: 'All grades of stainless steel' },
+    { metal: 'Insulated Wire (Medium)', description: 'Medium grade insulated wire' },
+    { metal: 'Insulated Wire (Low)', description: 'Low grade insulated wire' },
+    { metal: 'Lead (Clean)', description: 'Clean lead sheet, pipe' },
+    { metal: 'Lead Scrap', description: 'Lead batteries, mixed lead' },
+    { metal: 'Steel (Heavy)', description: 'Heavy structural steel' },
+    { metal: 'Steel (Normal)', description: 'Standard mild steel' },
   ];
 
   return (
@@ -87,9 +86,9 @@ const ScrapMetalPricesMelbourne = () => {
             </div>
 
             <Card className="p-8 mb-8">
-              <h3 className="text-2xl font-heading font-bold mb-6">Current Scrap Metal Prices (Per Kg)</h3>
+              <h3 className="text-2xl font-heading font-bold mb-6">Scrap Metal Types We Buy</h3>
               <p className="text-muted-foreground mb-6">
-                Below are current scrap metal prices in Melbourne. All prices are in AUD per kilogram and updated based on market conditions. Actual prices may vary based on material quality, quantity, cleanliness, and contamination level. Contact us for precise quotes on your specific materials.
+                We buy all types of scrap metal in Melbourne. Our prices are competitive and based on current market conditions. Actual prices depend on material quality, quantity, cleanliness, and contamination level. Contact us for precise quotes on your specific materials.
               </p>
               <div className="space-y-3">
                 {metalPrices.map((item, index) => (
@@ -99,16 +98,16 @@ const ScrapMetalPricesMelbourne = () => {
                       <p className="text-sm text-muted-foreground">{item.description}</p>
                     </div>
                     <div className="text-right ml-4">
-                      <span className="inline-block bg-secondary/20 text-secondary px-4 py-2 rounded-full font-semibold">
-                        {item.price}
-                      </span>
+                      <Button asChild size="sm" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary">
+                        <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get Quote</a>
+                      </Button>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 p-4 bg-accent/10 rounded-lg">
+              <div className="mt-6 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
                 <p className="text-sm text-muted-foreground">
-                  <strong>Note:</strong> Prices shown are current market rates in AUD per kilogram. Actual rates depend on material grade, cleanliness, quantity, and current London Metal Exchange (LME) prices. Prices updated regularly based on global commodity markets. All quotes are provided free and without obligation.
+                  <strong className="text-foreground">Contact us for current rates:</strong> Our prices are updated daily based on London Metal Exchange (LME) rates and global commodity markets. Call or WhatsApp <a href="tel:+61452367372" className="text-secondary font-semibold hover:underline">+61 452 367 372</a> for today's exact pricing on your scrap metal. All quotes are provided free and without obligation.
                 </p>
               </div>
             </Card>
@@ -153,11 +152,11 @@ const ScrapMetalPricesMelbourne = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/price-calculator">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold text-lg px-10 h-14">
-                  Use Price Calculator
-                </Button>
-              </Link>
+              <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold text-lg px-10 h-14">
+                <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">
+                  Get Current Prices on WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
         </div>

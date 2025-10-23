@@ -10,7 +10,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import NonFerrousMetal from "./pages/NonFerrousMetal";
 import Contact from "./pages/Contact";
-import PriceCalculator from "./pages/PriceCalculator";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 // Non-Ferrous Metal Pages
 import CopperScrapMetal from "./pages/CopperScrapMetal";
@@ -46,8 +46,8 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/non-ferrous-metal" element={<NonFerrousMetal />} />
+              <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/price-calculator" element={<PriceCalculator />} />
 
               {/* Non-Ferrous Metal Sub-pages */}
               <Route path="/copper-scrap-metal" element={<CopperScrapMetal />} />
@@ -64,7 +64,7 @@ const App = () => (
               <Route path="/stainless-steel-scrap-price" element={<StainlessSteelScrapPrice />} />
               <Route path="/copper-cable-high-voltage" element={<CopperCableHighVoltage />} />
               <Route path="/scrap-bin-service" element={<ScrapBinService />} />
-              <Route path="/cash-for-scrap-cars-melbourne" element={<CashForScrapCarsMelbourne />} />
+              <Route path="/scrap-car-recycling-melbourne" element={<CashForScrapCarsMelbourne />} />
               <Route path="/scrap-ac-units" element={<ScrapACUnits />} />
               <Route path="/shiny-copper" element={<ShinyCopper />} />
 

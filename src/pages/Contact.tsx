@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: <FiClock className="w-6 h-6" />,
       title: 'Business Hours',
-      content: 'Monday - Saturday: 8:00 AM - 6:00 PM',
+      content: 'Mon-Fri: 7 AM - 5 PM | Sat: 10 AM - 4 PM',
       link: null,
     },
   ];

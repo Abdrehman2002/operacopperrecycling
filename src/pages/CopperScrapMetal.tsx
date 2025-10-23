@@ -2,7 +2,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { FiCheck, FiDollarSign, FiTruck, FiAward, FiShield, FiClock, FiUsers, FiMapPin } from 'react-icons/fi';
+import { FiCheck, FiDollarSign, FiTruck, FiAward, FiShield, FiClock, FiUsers, FiMapPin, FiPhone } from 'react-icons/fi';
 import copperCables from '@/assets/copper-cables.jpg';
 import copperMaterials from '@/assets/copper-materials.jpg';
 
@@ -92,7 +92,7 @@ const CopperScrapMetal = () => {
     },
     {
       title: 'Plumbers & HVAC Technicians',
-      description: 'Cash for copper pipes, tubing, fittings, and refrigerant lines. We understand tradespeople need quick, reliable service.'
+      description: 'We buy copper pipes, tubing, fittings, and refrigerant lines. We understand tradespeople need quick, reliable service.'
     },
     {
       title: 'Demolition & Construction Sites',
@@ -115,7 +115,7 @@ const CopperScrapMetal = () => {
   const faqs = [
     {
       question: 'What is the current price for copper scrap in Melbourne?',
-      answer: 'Copper prices fluctuate daily based on global market rates (LME). Currently, bare bright copper typically fetches $8-10 per kg, #1 copper pipes range $7-9 per kg, #2 copper is $6-8 per kg, and insulated wire is priced based on copper content (usually 40-60% of bare bright rates). Call us at +61 452 367 372 for today\'s exact pricing as rates change daily.'
+      answer: 'Copper prices fluctuate daily based on global market rates (LME). For the most current rates on bare bright copper, #1 copper pipes, #2 copper, and insulated wire, please contact us directly. Call or WhatsApp us at +61 452 367 372 for today\'s exact pricing as rates change daily with the market.'
     },
     {
       question: 'Do you offer free pickup for copper scrap?',
@@ -180,7 +180,7 @@ const CopperScrapMetal = () => {
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Cash For Copper Scrap Metal Melbourne</h1>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Copper Scrap Metal Melbourne</h1>
             <p className="text-xl md:text-2xl mb-4 leading-relaxed opacity-90">
               Top Dollar for All Types of Copper Scrap | Free Pickup | Instant Payment
             </p>
@@ -207,7 +207,7 @@ const CopperScrapMetal = () => {
             <div className="hidden md:block">|</div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Mon-Sat: 8AM-6PM</span>
+              <span>Mon-Fri: 7 AM-5 PM | Sat: 10 AM-4 PM</span>
             </div>
           </div>
         </div>
@@ -223,7 +223,7 @@ const CopperScrapMetal = () => {
             <div>
               <h2 className="text-4xl font-heading font-bold mb-6">Melbourne's Leading Copper Scrap Buyers</h2>
               <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
-                Opera Copper Recycling has been Melbourne's trusted copper scrap buyer since 2009. We offer the most competitive prices for all types of copper scrap, from bare bright copper wire to oxidized copper pipes and everything in between.
+                Opera Copper Recycling has been Melbourne's trusted copper scrap buyer for years. We offer competitive prices for all types of copper scrap, from bare bright copper wire to oxidized copper pipes and everything in between.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Whether you're an electrician with copper wire offcuts, a plumber with old copper pipes, a demolition contractor with building copper, or a homeowner renovating your property, we provide instant payment and professional service every time.
@@ -235,8 +235,8 @@ const CopperScrapMetal = () => {
                 <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
                   <a href="tel:+61452367372">Call For Today's Price</a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="font-semibold">
-                  <Link to="/price-calculator">Price Calculator</Link>
+                <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold">
+                  <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
                 </Button>
               </div>
             </div>
@@ -426,7 +426,7 @@ const CopperScrapMetal = () => {
               <Link to="/contact">Request Quote Online</Link>
             </Button>
           </div>
-          <p className="mt-6 text-sm opacity-75">Open Monday to Saturday, 8:00 AM - 6:00 PM | Serving All Melbourne Suburbs</p>
+          <p className="mt-6 text-sm opacity-75">Monday - Friday: 7 AM - 5 PM | Saturday: 10 AM - 4 PM | Serving All Melbourne Suburbs</p>
         </div>
       </section>
     </div>

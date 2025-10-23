@@ -13,6 +13,10 @@ import copperCables from '@/assets/copper-cables.jpg';
 import brassScrap from '@/assets/brass-scrap.jpg';
 import aluminumScrap from '@/assets/aluminum-scrap.jpg';
 import stainlessSteel from '@/assets/stainless-steel.jpg';
+import acImage from '@/assets/ac 2.jpeg';
+import batteriesImage from '@/assets/batteries.png';
+import catalyticConverterImage from '@/assets/catalytic converter.jpeg';
+import rimsImage from '@/assets/rims.png';
 
 const Home = () => {
   const [formData, setFormData] = useState({
@@ -54,6 +58,30 @@ const Home = () => {
       title: 'Stainless Steel Scrap',
       description: 'Top market prices for stainless steel equipment, piping, and industrial components. Professional service for all grades.',
       image: stainlessSteel,
+      link: '/services',
+    },
+    {
+      title: 'Air Conditioner Recycling',
+      description: 'We responsibly recycle air conditioning units, recovering valuable metals and ensuring environmentally safe disposal of components.',
+      image: acImage,
+      link: '/scrap-ac-units',
+    },
+    {
+      title: 'Battery Recycling',
+      description: 'Our battery recycling service helps prevent hazardous waste and recovers reusable materials from used car and industrial batteries.',
+      image: batteriesImage,
+      link: '/car-battery-disposal',
+    },
+    {
+      title: 'Catalytic Converter Recycling',
+      description: 'We specialize in recycling catalytic converters, extracting precious metals through safe, eco-friendly methods.',
+      image: catalyticConverterImage,
+      link: '/catalytic-converter',
+    },
+    {
+      title: 'Rim Recycling',
+      description: 'We collect and recycle alloy and steel rims, helping reduce waste while reclaiming high-quality metal for reuse.',
+      image: rimsImage,
       link: '/services',
     },
   ];
@@ -202,14 +230,14 @@ const Home = () => {
       </section>
 
       {/* Value Proposition */}
-      <section className="py-16 bg-gradient-to-br from-muted/50 via-background to-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-muted/50 via-background to-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {valueProps.map((prop, index) => (
-              <Card key={index} className="p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-t-secondary bg-gradient-to-b from-card to-card/50">
-                <div className="text-secondary mb-4 flex justify-center animate-pulse">{prop.icon}</div>
-                <h3 className="font-heading font-bold text-2xl mb-3">{prop.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{prop.description}</p>
+              <Card key={index} className="p-6 sm:p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-t-secondary bg-gradient-to-b from-card to-card/50 card-hover group">
+                <div className="text-secondary mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{prop.icon}</div>
+                <h3 className="font-heading font-bold text-xl sm:text-2xl mb-3 group-hover:text-secondary transition-colors">{prop.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{prop.description}</p>
               </Card>
             ))}
           </div>
@@ -259,12 +287,12 @@ const Home = () => {
       </section>
 
       {/* Quick Contact */}
-      <section className="py-6 bg-gradient-to-r from-secondary/90 via-secondary to-secondary/90 text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 animate-pulse">
-            <FiPhone className="w-6 h-6" />
-            <span className="text-lg">Need immediate assistance?</span>
-            <a href="tel:+61452367372" className="text-2xl font-bold hover:scale-110 transition-transform">
+      <section className="py-4 sm:py-6 bg-gradient-to-r from-secondary/90 via-secondary to-secondary/90 text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-center sm:text-left">
+            <FiPhone className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" />
+            <span className="text-sm sm:text-base lg:text-lg font-medium">Need immediate assistance?</span>
+            <a href="tel:+61452367372" className="text-xl sm:text-2xl font-bold hover:scale-110 transition-transform focus-ring rounded px-3 py-1 min-h-[44px] flex items-center">
               +61 452 367 372
             </a>
           </div>
@@ -272,28 +300,28 @@ const Home = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-sm font-bold mb-6 border-2 border-secondary/30 shadow-lg">
-              <span className="text-xl">⚡</span>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
+              <span className="text-lg sm:text-xl">⚡</span>
               What We Offer
             </div>
-            <h2 className="text-4xl md:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent px-4">
               Our Services
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Comprehensive scrap metal recycling solutions with competitive pricing and instant payment
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-12 lg:mb-16">
             {services.map((service, index) => (
-              <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-card/80 backdrop-blur-sm">
+              <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-card/80 backdrop-blur-sm card-hover">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={service.image}
@@ -309,30 +337,30 @@ const Home = () => {
                   {/* Corner Accent */}
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-secondary to-secondary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}></div>
                 </div>
-                <div className="p-6 relative">
+                <div className="p-4 sm:p-6 relative">
                   {/* Decorative Line */}
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                  <h3 className="font-heading font-bold text-xl mb-3 group-hover:text-secondary transition-colors duration-300">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed line-clamp-3">{service.description}</p>
+                  <h3 className="font-heading font-bold text-lg sm:text-xl mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300">{service.title}</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-3">{service.description}</p>
                   <Link
                     to={service.link}
-                    className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all duration-300 group/link"
+                    className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all duration-300 group/link text-sm sm:text-base focus-ring rounded px-2 py-1 min-h-[44px] sm:min-h-0"
                   >
                     <span>Learn More</span>
-                    <span className="text-lg group-hover/link:translate-x-1 transition-transform">→</span>
+                    <span className="text-base sm:text-lg group-hover/link:translate-x-1 transition-transform">→</span>
                   </Link>
                 </div>
               </Card>
             ))}
           </div>
 
-          <div className="text-center">
-            <Button asChild size="lg" className="bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:via-secondary/80 hover:to-secondary/70 text-primary font-bold text-lg px-12 h-14 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-secondary/50">
+          <div className="text-center px-4">
+            <Button asChild size="lg" className="bg-gradient-to-r from-secondary via-secondary to-secondary/90 hover:from-secondary/90 hover:via-secondary/80 hover:to-secondary/70 text-primary font-bold text-base sm:text-lg px-8 sm:px-12 h-12 sm:h-14 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-secondary/50 w-full sm:w-auto focus-ring">
               <Link to="/services">
-                <span className="flex items-center gap-3">
+                <span className="flex items-center gap-2 sm:gap-3">
                   View All Services
-                  <span className="text-xl">✨</span>
+                  <span className="text-lg sm:text-xl">✨</span>
                 </span>
               </Link>
             </Button>
@@ -341,23 +369,23 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gradient-to-br from-background via-accent/5 to-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-background via-accent/5 to-muted/20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+            <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Our Advantages
             </div>
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Why Choose Opera Copper Recycling</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-3 sm:mb-4 px-4">Why Choose Opera Copper Recycling</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Melbourne's preferred choice for scrap metal recycling. We combine competitive pricing, convenience, and professional service.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {whyChooseUs.map((item, index) => (
-              <Card key={index} className="p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-secondary group bg-gradient-to-br from-card to-card/80">
-                <div className="text-secondary mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                <h3 className="font-heading font-bold text-xl mb-3 group-hover:text-secondary transition-colors">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+              <Card key={index} className="p-5 sm:p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-secondary group bg-gradient-to-br from-card to-card/80 shadow-elevated">
+                <div className="text-secondary mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                <h3 className="font-heading font-bold text-lg sm:text-xl mb-2 sm:mb-3 group-hover:text-secondary transition-colors">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{item.description}</p>
               </Card>
             ))}
           </div>
@@ -476,7 +504,7 @@ const Home = () => {
                       placeholder="Your full name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="border-2 focus:border-secondary"
+                      className="border-2 focus:border-secondary h-12 focus-ring text-base"
                     />
                   </div>
                   <div className="space-y-2">
@@ -490,7 +518,7 @@ const Home = () => {
                       placeholder="Your phone number"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="border-2 focus:border-secondary"
+                      className="border-2 focus:border-secondary h-12 focus-ring text-base"
                     />
                   </div>
                 </div>
@@ -506,7 +534,7 @@ const Home = () => {
                       placeholder="your.email@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="border-2 focus:border-secondary"
+                      className="border-2 focus:border-secondary h-12 focus-ring text-base"
                     />
                   </div>
                   <div className="space-y-2">
@@ -518,7 +546,7 @@ const Home = () => {
                       type="date"
                       value={formData.date}
                       onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                      className="border-2 focus:border-secondary"
+                      className="border-2 focus:border-secondary h-12 focus-ring text-base"
                     />
                   </div>
                 </div>
@@ -532,7 +560,7 @@ const Home = () => {
                     value={formData.service}
                     onValueChange={(value) => setFormData({ ...formData, service: value })}
                   >
-                    <SelectTrigger className="border-2 focus:border-secondary">
+                    <SelectTrigger className="border-2 focus:border-secondary h-12 focus-ring text-base">
                       <SelectValue placeholder="Select a service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -555,13 +583,13 @@ const Home = () => {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="border-2 focus:border-secondary resize-none"
+                    className="border-2 focus:border-secondary resize-none focus-ring text-base"
                   />
                 </div>
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-secondary hover:bg-secondary/90 text-lg font-semibold h-14 hover:scale-105 transition-transform"
+                  className="w-full bg-secondary hover:bg-secondary/90 text-base sm:text-lg font-semibold h-12 sm:h-14 hover:scale-105 transition-all shadow-lg hover:shadow-xl focus-ring"
                 >
                   Submit Request
                 </Button>

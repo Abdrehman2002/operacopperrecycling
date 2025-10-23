@@ -106,6 +106,9 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* Mobile-friendly utilities */
@@ -116,6 +119,16 @@ All colors MUST be HSL.
   /* Prevent horizontal scroll on mobile */
   html, body {
     @apply overflow-x-hidden;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced transitions for all interactive elements */
+  button, a, input, textarea, select {
+    @apply transition-all duration-300 ease-in-out;
   }
 }
 
@@ -157,5 +170,34 @@ All colors MUST be HSL.
   /* Mobile-friendly container */
   .container-responsive {
     @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Sleek card hover effects */
+  .card-hover {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+
+  /* Smooth gradient backgrounds */
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(0 0% 18%) 0%, hsl(0 0% 28%) 100%);
+  }
+
+  .gradient-copper {
+    background: linear-gradient(135deg, hsl(27 100% 39%) 0%, hsl(27 100% 49%) 100%);
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+
+  /* Elevated shadows */
+  .shadow-elevated {
+    box-shadow: 0 10px 40px -5px hsla(0, 0%, 0%, 0.12);
+  }
+
+  /* Focus states */
+  .focus-ring {
+    @apply focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:outline-none;
   }
 }
