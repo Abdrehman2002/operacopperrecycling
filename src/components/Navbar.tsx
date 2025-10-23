@@ -47,15 +47,14 @@ const Navbar = () => {
   ];
 
   const scrapMetalLinks = [
-    { name: 'Scrap Metal Prices Melbourne', path: '/scrap-metal-prices-melbourne' },
+    
     { name: 'Cable Wires', path: '/cable-wires' },
     { name: 'Catalytic Converter', path: '/catalytic-converter' },
-    { name: 'Car Battery Disposal', path: '/car-battery-disposal' },
-    { name: 'Stainless Steel Scrap Price', path: '/stainless-steel-scrap-price' },
-    { name: 'Copper Cable High Voltage', path: '/copper-cable-high-voltage' },
-    { name: 'Scrap Bin Service', path: '/scrap-bin-service' },
-    { name: 'Scrap AC Units', path: '/scrap-ac-units' },
-    { name: 'Shiny Copper', path: '/shiny-copper' },
+    { name: 'Battery', path: '/car-battery-disposal' },
+    { name: 'Stainless Steel ', path: '/stainless-steel-scrap-price' },
+    { name: 'Bin Service', path: '/scrap-bin-service' },
+    { name: 'AC Units', path: '/scrap-ac-units' },
+    
   ];
 
   const isActive = (path: string) => location.pathname === path;
