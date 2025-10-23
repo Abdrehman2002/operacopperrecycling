@@ -37,19 +37,19 @@ const Home = () => {
 
   const services = [
     {
-      title: 'Cash For Copper Scrap',
+      title: 'Copper Scrap',
       description: 'Get instant cash for all types of copper scrap. We buy bare bright copper, copper pipes, cables, and electrical wiring at competitive rates.',
       image: copperCables,
       link: '/non-ferrous-metal',
     },
     {
-      title: 'Brass Scrap Price',
+      title: 'Brass Scrap',
       description: 'Excellent prices for brass fittings, fixtures, valves, and decorative items. Fast assessment and instant payment for all brass materials.',
       image: brassScrap,
       link: '/non-ferrous-metal',
     },
     {
-      title: 'Aluminum Scrap Price',
+      title: 'Aluminum Scrap ',
       description: 'Competitive rates for aluminum cans, extrusions, wheels, and industrial scrap. Free pickup available for large quantities.',
       image: aluminumScrap,
       link: '/non-ferrous-metal',
