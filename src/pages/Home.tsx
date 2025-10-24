@@ -194,7 +194,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl text-primary-foreground">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
-              Scrap Metal Recycling Melbourne
+              Opera Copper Recycling Melbourne
             </h1>
             <div className="flex flex-wrap gap-3 sm:gap-6 mb-4 sm:mb-6 text-sm sm:text-lg md:text-xl font-semibold">
               <div className="flex items-center gap-2">
@@ -256,7 +256,7 @@ const Home = () => {
                 Melbourne's Trusted Service
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4 text-foreground leading-tight">
-                Metal Scrap Recycling in Melbourne
+                Scrap Metal Recycling in Melbourne
               </h2>
               <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-secondary">
                 Your Trusted Scrap Metal Partner

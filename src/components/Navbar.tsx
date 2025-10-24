@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { FiPhone, FiMail, FiMenu, FiX, FiChevronDown, FiClock } from 'react-icons/fi';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import logo from '@/assets/logo2.JPG';
+import logo1 from '@/assets/logofinal 1.png';
+import logo2 from '@/assets/logofinal 2.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -96,12 +97,17 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform">
-            {/* Mobile Logo */}
+          <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform -ml-2 sm:ml-0">
+            {/* Two Logos Side by Side - Mobile Only */}
             <img
-              src={logo}
+              src={logo1}
               alt="Opera Copper Recycling"
-              className="h-12 w-auto sm:hidden object-contain"
+              className="h-12 w-auto object-contain sm:hidden"
+            />
+            <img
+              src={logo2}
+              alt="Opera Copper Recycling"
+              className="h-12 w-auto object-contain sm:hidden"
             />
             {/* Desktop Text Logo */}
             <div className="hidden sm:block font-heading font-bold text-base sm:text-xl md:text-2xl text-primary text-center">
