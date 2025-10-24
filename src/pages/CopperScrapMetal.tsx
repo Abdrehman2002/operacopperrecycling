@@ -277,9 +277,6 @@ const CopperScrapMetal = () => {
                     <div className="flex flex-col justify-center items-center bg-accent/10 rounded-lg p-4">
                       <FiDollarSign className="w-10 h-10 text-secondary mb-2" />
                       <p className="text-sm font-semibold text-center">{grade.price}</p>
-                      <Button asChild size="sm" variant="outline" className="mt-3">
-                        <a href="tel:+61452367372">Get Quote</a>
-                      </Button>
                     </div>
                   </div>
                 </Card>
