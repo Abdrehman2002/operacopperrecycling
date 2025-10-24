@@ -130,12 +130,12 @@ const About = () => {
                 </h3>
                 <div className="space-y-3 text-lg">
                   <div className="flex justify-between items-center pb-3 border-b border-border">
-                    <span className="font-semibold">Monday - Friday</span>
-                    <span className="text-secondary font-bold">7 AM - 5 PM</span>
+                    <span className="font-semibold">Monday to Friday</span>
+                    <span className="text-secondary font-bold">7 AM – 5 PM</span>
                   </div>
                   <div className="flex justify-between items-center pb-3 border-b border-border">
                     <span className="font-semibold">Saturday</span>
-                    <span className="text-secondary font-bold">10 AM - 4 PM</span>
+                    <span className="text-secondary font-bold">10 AM – 4 PM</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold">Sunday</span>
@@ -184,15 +184,15 @@ const About = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Ready to Recycle Your Scrap Metal?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
             Contact Opera Copper Recycling today for competitive prices, free pickup, and professional service.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-lg px-10 h-14 font-semibold">
-              <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary bg-primary-foreground hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
+            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
               <a href="tel:+61452367372">Call +61 452 367 372</a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
+              <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
             </Button>
           </div>
         </div>

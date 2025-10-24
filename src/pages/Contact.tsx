@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: <FiClock className="w-6 h-6" />,
       title: 'Business Hours',
-      content: 'Mon-Fri: 7 AM - 5 PM | Sat: 10 AM - 4 PM',
+      content: 'Mon-Fri: 7 AM – 5 PM | Sat: 10 AM – 4 PM',
       link: null,
     },
   ];
@@ -223,7 +223,7 @@ const Contact = () => {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-16 bg-accent text-accent-foreground">
+      <section className="py-16 bg-secondary text-white">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl md:text-4xl font-heading font-bold mb-3">Need Immediate Assistance?</h3>
           <p className="text-lg md:text-xl mb-6">Call us now for urgent scrap metal collection and instant quotes</p>

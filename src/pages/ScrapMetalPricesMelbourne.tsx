@@ -51,7 +51,7 @@ const ScrapMetalPricesMelbourne = () => {
             </div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Mon-Sat: 7AM - 5PM</span>
+              <span>Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
             </div>
           </div>
         </div>
@@ -165,14 +165,14 @@ const ScrapMetalPricesMelbourne = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get Today's Scrap Metal Prices</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
             Contact Opera Copper Recycling for current scrap metal prices in Melbourne. Free pickup, instant payment, and competitive rates for all non-ferrous metals.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-lg px-10 h-14 font-semibold">
+            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
               <a href="tel:+61452367372">Call +61 452 367 372</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-10 h-14 font-semibold">
+            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
               <Link to="/contact">Request Quote</Link>
             </Button>
           </div>

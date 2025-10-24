@@ -256,7 +256,7 @@ const Home = () => {
                 Melbourne's Trusted Service
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4 text-foreground leading-tight">
-                Copper Scrap Recycling in Melbourne
+                Metal Scrap Recycling in Melbourne
               </h2>
               <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-secondary">
                 Your Trusted Scrap Metal Partner
@@ -360,7 +360,6 @@ const Home = () => {
               <Link to="/services">
                 <span className="flex items-center gap-2 sm:gap-3">
                   View All Services
-                  <span className="text-lg sm:text-xl">✨</span>
                 </span>
               </Link>
             </Button>
@@ -609,11 +608,11 @@ const Home = () => {
       <section className="py-12 sm:py-16 lg:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6 px-4">Ready to Turn Your Scrap into Cash?</h2>
-          <p className="text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed px-4">
+          <p className="text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto text-secondary leading-relaxed px-4">
             Contact Opera Copper Recycling today for fast, honest, and hassle-free metal recycling services in Melbourne. Free pickup and same-day payment available!
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">
+            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">
               <a href="tel:+61452367372">Call +61 452 367 372</a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">

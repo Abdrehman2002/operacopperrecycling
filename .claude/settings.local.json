@@ -4,7 +4,11 @@
       "Bash(npm run dev:*)",
       "Bash(npm install)",
       "Bash(curl:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(for file in BrassScrapPrice.tsx CableWires.tsx CarBatteryDisposal.tsx CashForScrapCarsMelbourne.tsx CatalyticConverter.tsx CopperCableHighVoltage.tsx CopperScrapMetal.tsx InsulatedWireScrapPrice.tsx LeadScrapPrice.tsx NonFerrousMetal.tsx ScrapACUnits.tsx ScrapBinService.tsx ScrapMetalPricesMelbourne.tsx Services.tsx ShinyCopper.tsx StainlessSteelScrapPrice.tsx About.tsx Home.tsx PriceCalculator.tsx)",
+      "Bash(do grep -q \"Call +61 452 367 372\" \"$file\")",
+      "Bash(echo:*)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

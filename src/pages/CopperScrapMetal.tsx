@@ -253,31 +253,27 @@ const CopperScrapMetal = () => {
               <p className="text-xl text-muted-foreground">Understanding copper grades helps you get the best price for your scrap</p>
             </div>
 
-            <div className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
               {copperGrades.map((grade, index) => (
-                <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="md:col-span-2">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-2xl font-heading font-bold">{grade.name}</h3>
-                        <span className="text-sm font-semibold bg-secondary/10 text-secondary px-3 py-1 rounded-full">
-                          {grade.grade}
-                        </span>
-                      </div>
-                      <p className="text-muted-foreground mb-4 leading-relaxed">{grade.description}</p>
-                      <div className="mb-3">
-                        <p className="text-sm font-semibold mb-2">Examples:</p>
-                        <div className="flex flex-wrap gap-2">
-                          {grade.examples.map((example, i) => (
-                            <span key={i} className="text-xs bg-muted px-2 py-1 rounded">{example}</span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex flex-col justify-center items-center bg-accent/10 rounded-lg p-4">
-                      <FiDollarSign className="w-10 h-10 text-secondary mb-2" />
-                      <p className="text-sm font-semibold text-center">{grade.price}</p>
-                    </div>
+                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-2xl font-heading font-bold text-foreground">{grade.name}</h3>
+                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
+                      {grade.price}
+                    </span>
+                  </div>
+                  <p className="text-sm font-semibold text-secondary mb-3">{grade.grade}</p>
+                  <p className="text-muted-foreground leading-relaxed mb-4">{grade.description}</p>
+                  <div className="border-t border-border pt-4">
+                    <p className="text-sm font-semibold mb-2 text-foreground">Common Examples:</p>
+                    <ul className="space-y-1">
+                      {grade.examples.map((example, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <FiCheck className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                          <span>{example}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </Card>
               ))}
@@ -412,18 +408,18 @@ const CopperScrapMetal = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Ready to Sell Your Copper Scrap?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
             Contact Opera Copper Recycling today for the best copper scrap prices in Melbourne. Free pickup, instant payment, and professional service guaranteed.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-lg px-10 h-14 font-semibold">
+            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
               <a href="tel:+61452367372">Call +61 452 367 372</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-10 h-14 font-semibold">
+            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
               <Link to="/contact">Request Quote Online</Link>
             </Button>
           </div>
-          <p className="mt-6 text-sm opacity-75">Monday - Friday: 7 AM - 5 PM | Saturday: 10 AM - 4 PM | Serving All Melbourne Suburbs</p>
+          <p className="mt-6 text-sm opacity-75">Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM | Serving All Melbourne Suburbs</p>
         </div>
       </section>
     </div>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { FiPhone, FiMail, FiMenu, FiX, FiChevronDown, FiClock } from 'react-icons/fi';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import logo from '@/assets/logo2.JPG';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,7 +64,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-card border-b border-border">
       {/* Top Bar */}
-      <div className="bg-accent text-accent-foreground">
+      <div className="bg-secondary text-white">
         <div className="container mx-auto px-4 py-2 sm:py-3">
           <div className="flex flex-wrap items-center justify-between text-xs sm:text-sm gap-2">
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
@@ -76,7 +77,7 @@ const Navbar = () => {
               <span className="hidden lg:inline">|</span>
               <div className="hidden lg:flex items-center gap-2">
                 <FiClock className="w-4 h-4" />
-                <span>Mon-Fri: 7 AM-5 PM | Sat: 10 AM-4 PM</span>
+                <span>Mon-Fri: 7 AM–5 PM | Sat: 10 AM–4 PM</span>
               </div>
             </div>
             <div className="flex items-center gap-3 sm:gap-4">
@@ -96,7 +97,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform">
-            <div className="font-heading font-bold text-base sm:text-xl md:text-2xl text-primary text-center">
+            {/* Mobile Logo */}
+            <img
+              src={logo}
+              alt="Opera Copper Recycling"
+              className="h-12 w-auto sm:hidden object-contain"
+            />
+            {/* Desktop Text Logo */}
+            <div className="hidden sm:block font-heading font-bold text-base sm:text-xl md:text-2xl text-primary text-center">
               <div>OPERA <span className="text-secondary">COPPER</span></div>
               <div className="text-xs sm:text-sm md:text-base font-semibold text-muted-foreground tracking-wider">RECYCLING</div>
             </div>
