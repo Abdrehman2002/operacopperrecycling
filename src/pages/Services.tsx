@@ -15,15 +15,15 @@ import rimsImage from '@/assets/rims.png';
 const Services = () => {
   const services = [
     {
-      title: 'Copper Cable & Wire Recycling',
-      description: 'We specialize in buying all types of copper cables and wiring. From residential electrical wire to high-voltage industrial cables, we offer competitive rates for bare bright copper, insulated copper cables, and copper wire scrap.',
+      title: 'Copper Scrap Metal Recycling',
+      description: 'We specialize in buying all types of copper scrap metal, one of the most valuable and sustainable materials in the recycling industry. Whether you have bare bright copper, copper pipes, sheets, tubing, electrical wiring, or mixed copper scrap, we offer competitive rates and fast, reliable service. As a trusted Melbourne-based recycling company, we\'re committed to environmental responsibility and ensuring your copper is recycled efficiently. Get the best value for your copper today.',
       features: [
-        'Bare bright copper wire',
-        'Insulated copper cables',
+        'Bare bright copper',
+        'Copper pipes and tubing',
+        'Copper sheets and plates',
         'Copper electrical wiring',
-        'High-voltage power cables',
-        'Copper communication cables',
-        'Industrial copper wire scrap',
+        'Insulated copper cables',
+        'Mixed copper scrap',
       ],
       image: copperCables,
       link: '/non-ferrous-metal',
