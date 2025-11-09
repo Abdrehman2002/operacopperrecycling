@@ -137,7 +137,7 @@ const LeadScrapPrice = () => {
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Lead Scrap Price Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Lead Scrap</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
             Competitive lead scrap prices for batteries, pipes, sheeting, and weights. Safe, certified, and environmentally responsible lead recycling in Melbourne.
           </p>
@@ -218,10 +218,10 @@ const LeadScrapPrice = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {leadTypes.map((type, index) => (
-                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{type.name}</h3>
-                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
+                <Card key={index} className="p-6 sm:p-8 hover:shadow-xl transition-shadow">
+                  <div className="mb-4">
+                    <h3 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2 break-words">{type.name}</h3>
+                    <span className="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                       {type.price}
                     </span>
                   </div>

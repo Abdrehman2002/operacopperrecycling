@@ -190,7 +190,7 @@ const StainlessSteelScrapPrice = () => {
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Stainless Steel Scrap Price Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Stainless Steel Scrap</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
             Premium prices for all stainless steel grades in Melbourne. We buy 304, 316, 430, and mixed stainless steel. Professional XRF testing available for accurate grade identification and pricing.
           </p>
@@ -220,19 +220,19 @@ const StainlessSteelScrapPrice = () => {
       {/* Main Introduction */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 text-center">Melbourne's Stainless Steel Scrap Experts</h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Stainless Steel Scrap Experts</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling offers premium prices for all grades of stainless steel scrap. Whether you have 304 kitchen equipment, 316 marine-grade materials, or mixed stainless steel, we provide expert grading and fair market pricing based on nickel and chromium content.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Our professional team uses XRF testing to accurately identify stainless grades, ensuring you receive the correct premium pricing for 304, 316, and other high-value grades. We serve restaurants, manufacturers, construction companies, and marine industries across Melbourne.
                 </p>
               </div>
               <div>
-                <img src={stainlessSteel} alt="Stainless Steel Scrap" className="rounded-2xl shadow-xl w-full h-full object-cover" />
+                <img src={stainlessSteel} alt="Stainless Steel Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
               </div>
             </div>
           </div>
@@ -249,10 +249,10 @@ const StainlessSteelScrapPrice = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {stainlessGrades.map((grade, index) => (
-                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{grade.name}</h3>
-                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
+                <Card key={index} className="p-6 sm:p-8 hover:shadow-xl transition-shadow">
+                  <div className="mb-4">
+                    <h3 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2 break-words">{grade.name}</h3>
+                    <span className="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                       {grade.price}
                     </span>
                   </div>

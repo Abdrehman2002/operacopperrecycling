@@ -9,14 +9,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { FiCheck, FiPhone, FiDollarSign, FiTruck, FiClock, FiAward, FiShield, FiRefreshCw, FiMail, FiUser, FiCalendar } from 'react-icons/fi';
 import heroImage from '@/assets/hero-copper.jpg';
 import copperMaterials from '@/assets/copper-materials.jpg';
-import copperCables from '@/assets/copper-cables.jpg';
+import copperWire from '@/assets/copper wire.jpg';
 import brassScrap from '@/assets/brass-scrap.jpg';
 import aluminumScrap from '@/assets/aluminum-scrap.jpg';
 import stainlessSteel from '@/assets/stainless-steel.jpg';
 import acImage from '@/assets/ac 2.jpeg';
-import batteriesImage from '@/assets/batteries.png';
+import batteriesImage from '@/assets/batteries.jpg';
 import catalyticConverterImage from '@/assets/catalytic converter.jpeg';
 import rimsImage from '@/assets/rims.png';
+import insulatedWire from '@/assets/insulated wire.jpg';
 
 const Home = () => {
   const [formData, setFormData] = useState({
@@ -39,26 +40,26 @@ const Home = () => {
     {
       title: 'Copper Scrap',
       description: 'Get instant cash for all types of copper scrap. We buy bare bright copper, copper pipes, cables, and electrical wiring at competitive rates.',
-      image: copperCables,
-      link: '/non-ferrous-metal',
+      image: copperWire,
+      link: '/copper-scrap-metal',
     },
     {
       title: 'Brass Scrap',
       description: 'Excellent prices for brass fittings, fixtures, valves, and decorative items. Fast assessment and instant payment for all brass materials.',
       image: brassScrap,
-      link: '/non-ferrous-metal',
+      link: '/brass-scrap-price',
     },
     {
       title: 'Aluminum Scrap ',
       description: 'Competitive rates for aluminum cans, extrusions, wheels, and industrial scrap. Free pickup available for large quantities.',
       image: aluminumScrap,
-      link: '/non-ferrous-metal',
+      link: '/aluminium-scrap-price',
     },
     {
       title: 'Stainless Steel Scrap',
       description: 'Top market prices for stainless steel equipment, piping, and industrial components. Professional service for all grades.',
       image: stainlessSteel,
-      link: '/services',
+      link: '/stainless-steel-scrap-price',
     },
     {
       title: 'Air Conditioner Recycling',
@@ -79,10 +80,10 @@ const Home = () => {
       link: '/catalytic-converter',
     },
     {
-      title: 'Rim Recycling',
-      description: 'We collect and recycle alloy and steel rims, helping reduce waste while reclaiming high-quality metal for reuse.',
-      image: rimsImage,
-      link: '/services',
+      title: 'Insulated Wire Recycling',
+      description: 'Top prices for insulated copper wire and cables. No need to strip - we buy romex, THHN, and all electrical wiring as-is.',
+      image: insulatedWire,
+      link: '/insulated-wire-scrap-price',
     },
   ];
 
@@ -196,6 +197,9 @@ const Home = () => {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
               Opera Copper Recycling At Melbourne
             </h1>
+            <div className="inline-block px-4 py-2 bg-accent text-accent-foreground rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
+              Melbourne's Trusted Service
+            </div>
             <div className="flex flex-wrap gap-3 sm:gap-6 mb-4 sm:mb-6 text-sm sm:text-lg md:text-xl font-semibold">
               <div className="flex items-center gap-2">
                 <FiDollarSign className="w-5 h-5 sm:w-6 sm:h-6 text-secondary flex-shrink-0" />
@@ -211,7 +215,7 @@ const Home = () => {
               </div>
             </div>
             <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 leading-relaxed font-medium">
-              Turn your Copper Scrap into instant money. Trusted by locals, we make copper disposal simple and rewarding.
+              Turn your Scrap into instant money. Trusted by locals, we make copper disposal simple and rewarding.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-6">
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">
@@ -252,9 +256,6 @@ const Home = () => {
               <img src={copperMaterials} alt="Opera Copper Recycling Melbourne" className="rounded-2xl shadow-xl w-full" />
             </div>
             <div className="order-1 md:order-2">
-              <div className="inline-block px-4 py-2 bg-accent text-accent-foreground rounded-full text-xs sm:text-sm font-semibold mb-4">
-                Melbourne's Trusted Service
-              </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4 text-foreground leading-tight">
                 Scrap Metal Recycling in Melbourne
               </h2>
@@ -322,35 +323,34 @@ const Home = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-12 lg:mb-16">
             {services.map((service, index) => (
               <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-card via-card to-card/80 backdrop-blur-sm card-hover">
-                <div className="aspect-[4/3] overflow-hidden relative">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-500">
-                      <span className="text-2xl text-primary font-bold">→</span>
+                <Link to={service.link} className="block">
+                  <div className="aspect-[4/3] overflow-hidden relative">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-500">
+                        <span className="text-2xl text-primary font-bold">→</span>
+                      </div>
+                    </div>
+                    {/* Corner Accent */}
+                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-secondary to-secondary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}></div>
+                  </div>
+                  <div className="p-4 sm:p-6 relative">
+                    {/* Decorative Line */}
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                    <h3 className="font-heading font-bold text-lg sm:text-xl mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300">{service.title}</h3>
+                    <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-3">{service.description}</p>
+                    <div className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all duration-300 group/link text-sm sm:text-base focus-ring rounded px-2 py-1 min-h-[44px] sm:min-h-0">
+                      <span>Learn More</span>
+                      <span className="text-base sm:text-lg group-hover/link:translate-x-1 transition-transform">→</span>
                     </div>
                   </div>
-                  {/* Corner Accent */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-secondary to-secondary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{clipPath: 'polygon(100% 0, 0 0, 100% 100%)'}}></div>
-                </div>
-                <div className="p-4 sm:p-6 relative">
-                  {/* Decorative Line */}
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  <h3 className="font-heading font-bold text-lg sm:text-xl mb-2 sm:mb-3 group-hover:text-secondary transition-colors duration-300">{service.title}</h3>
-                  <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed line-clamp-3">{service.description}</p>
-                  <Link
-                    to={service.link}
-                    className="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all duration-300 group/link text-sm sm:text-base focus-ring rounded px-2 py-1 min-h-[44px] sm:min-h-0"
-                  >
-                    <span>Learn More</span>
-                    <span className="text-base sm:text-lg group-hover/link:translate-x-1 transition-transform">→</span>
-                  </Link>
-                </div>
+                </Link>
               </Card>
             ))}
           </div>

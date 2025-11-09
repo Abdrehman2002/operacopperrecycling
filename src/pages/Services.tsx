@@ -8,22 +8,22 @@ import aluminumScrap from '@/assets/aluminum-scrap.jpg';
 import stainlessSteel from '@/assets/stainless-steel.jpg';
 import copperMaterials from '@/assets/copper-materials.jpg';
 import acImage from '@/assets/ac 2.jpeg';
-import batteriesImage from '@/assets/batteries.png';
+import batteriesImage from '@/assets/batteries.jpg';
 import catalyticConverterImage from '@/assets/catalytic converter.jpeg';
 import rimsImage from '@/assets/rims.png';
 
 const Services = () => {
   const services = [
     {
-      title: 'Copper Scrap Metal Recycling',
+      title: 'Copper Cable & Wire Recycling',
       description: 'We specialize in buying all types of copper scrap metal, one of the most valuable and sustainable materials in the recycling industry. Whether you have bare bright copper, copper pipes, sheets, tubing, electrical wiring, or mixed copper scrap, we offer competitive rates and fast, reliable service. As a trusted Melbourne-based recycling company, we\'re committed to environmental responsibility and ensuring your copper is recycled efficiently. Get the best value for your copper today.',
       features: [
-        'Bare bright copper',
-        'Copper pipes and tubing',
-        'Copper sheets and plates',
-        'Copper electrical wiring',
+        'Bare bright copper wire',
         'Insulated copper cables',
-        'Mixed copper scrap',
+        'Copper electrical wiring',
+        'High-voltage power cables',
+        'Copper communication cables',
+        'Industrial copper wire scrap',
       ],
       image: copperCables,
       link: '/non-ferrous-metal',

@@ -190,7 +190,7 @@ const CableWires = () => {
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Cable Wires Recycling Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Cable Wires Recycling</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
             Top prices for all types of cable wires in Melbourne. We buy copper power cables, electrical wiring, communication cables, and industrial cable scrap. Free pickup for large quantities.
           </p>
@@ -220,60 +220,20 @@ const CableWires = () => {
       {/* Main Introduction */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 text-center">Melbourne's Cable Wire Recycling Experts</h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Cable Wire Recycling Experts</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling is Melbourne's trusted buyer of cable wire scrap. We purchase all types of cables including power cables, communication cables, armored cables, coaxial cables, and underground utilities. Our pricing is based on accurate assessment of copper content and current market rates.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Whether you're an electrical contractor with leftover cables, a demolition company salvaging building materials, or a utility company upgrading infrastructure, we provide competitive pricing and professional service for cable recycling.
                 </p>
               </div>
               <div>
-                <img src={copperCables} alt="Cable Wires" className="rounded-2xl shadow-xl w-full h-full object-cover" />
+                <img src={copperCables} alt="Cable Wires" className="rounded-2xl shadow-xl w-full object-cover" />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cable Types Detail */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Types of Cable Wires We Buy</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-              We purchase all cable types with pricing based on copper content and cable condition.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              {cableTypes.map((type, index) => (
-                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{type.name}</h3>
-                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
-                      {type.price}
-                    </span>
-                  </div>
-                  <p className="text-sm font-semibold text-secondary mb-3">{type.grade}</p>
-                  <p className="text-muted-foreground leading-relaxed mb-4">{type.description}</p>
-                  <div className="border-t border-border pt-4 mb-4">
-                    <p className="text-sm font-semibold mb-2 text-foreground">Common Examples:</p>
-                    <ul className="space-y-1">
-                      {type.examples.map((example, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <FiCheck className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                          <span>{example}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="bg-accent/10 p-3 rounded">
-                    <p className="text-xs font-semibold text-muted-foreground">{type.copperContent}</p>
-                  </div>
-                </Card>
-              ))}
             </div>
           </div>
         </div>

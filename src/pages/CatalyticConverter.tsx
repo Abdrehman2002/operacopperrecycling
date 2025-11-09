@@ -2,13 +2,14 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { FiCheck, FiPhone, FiMapPin, FiClock, FiDollarSign, FiTruck, FiAward } from 'react-icons/fi';
+import catalyticConverterImage from '@/assets/catalytic converter.jpeg';
 
 const CatalyticConverter = () => {
   return (
     <div className="min-h-screen">
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Catalytic Converter Recycling Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Catalytic Converter Recycling</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
             Top prices for catalytic converters in Melbourne. We buy all types including OEM, aftermarket, and diesel converters. Instant payment based on precious metal content.
           </p>
@@ -36,11 +37,26 @@ const CatalyticConverter = () => {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-heading font-bold mb-8 text-center">Catalytic Converter Buyers Melbourne</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 text-center max-w-3xl mx-auto">
-              Opera Copper Recycling purchases catalytic converters at premium prices based on precious metal content. Catalytic converters contain platinum, palladium, and rhodium - valuable metals that make them highly recyclable.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Catalytic Converter Buyers</h2>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Opera Copper Recycling purchases catalytic converters at premium prices based on precious metal content. Catalytic converters contain platinum, palladium, and rhodium - valuable metals that make them highly recyclable.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Pricing depends on the converter type, vehicle make/model, and current precious metal market rates. OEM converters typically contain more precious metals than aftermarket converters and command higher prices.
+                </p>
+              </div>
+              <div>
+                <img
+                  src={catalyticConverterImage}
+                  alt="Catalytic Converter Recycling"
+                  className="w-full rounded-2xl shadow-xl object-cover"
+                />
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="p-6 text-center">
@@ -83,11 +99,8 @@ const CatalyticConverter = () => {
 
             <div className="bg-muted/50 p-8 rounded-lg mb-8">
               <h3 className="text-xl font-heading font-bold mb-4">Why Catalytic Converters Are Valuable</h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Catalytic converters contain precious metals including platinum, palladium, and rhodium. These metals act as catalysts to reduce harmful emissions. Due to the high value of these precious metals, catalytic converters are among the most valuable automotive scrap items.
-              </p>
               <p className="text-muted-foreground leading-relaxed">
-                Pricing depends on the converter type, vehicle make/model, and current precious metal market rates. OEM converters typically contain more precious metals than aftermarket converters and command higher prices.
+                Catalytic converters contain precious metals including platinum, palladium, and rhodium. These metals act as catalysts to reduce harmful emissions. Due to the high value of these precious metals, catalytic converters are among the most valuable automotive scrap items.
               </p>
             </div>
           </div>

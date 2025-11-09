@@ -98,22 +98,17 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-transform -ml-2 sm:ml-0">
-            {/* Two Logos Side by Side - Mobile Only */}
+            {/* Two Logos Side by Side - All Versions */}
             <img
               src={logo1}
               alt="Opera Copper Recycling"
-              className="h-12 w-auto object-contain sm:hidden"
+              className="h-12 w-auto object-contain"
             />
             <img
               src={logo2}
               alt="Opera Copper Recycling"
-              className="h-12 w-auto object-contain sm:hidden"
+              className="h-12 w-auto object-contain"
             />
-            {/* Desktop Text Logo */}
-            <div className="hidden sm:block font-heading font-bold text-base sm:text-xl md:text-2xl text-primary text-center">
-              <div>OPERA <span className="text-secondary">COPPER</span></div>
-              <div className="text-xs sm:text-sm md:text-base font-semibold text-muted-foreground tracking-wider">RECYCLING</div>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}

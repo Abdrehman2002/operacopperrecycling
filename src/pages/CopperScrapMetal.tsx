@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { FiCheck, FiDollarSign, FiTruck, FiAward, FiShield, FiClock, FiUsers, FiMapPin, FiPhone } from 'react-icons/fi';
 import copperCables from '@/assets/copper-cables.jpg';
 import copperMaterials from '@/assets/copper-materials.jpg';
+import copperWire from '@/assets/copper wire.jpg';
 
 const CopperScrapMetal = () => {
   const copperGrades = [
@@ -180,7 +181,7 @@ const CopperScrapMetal = () => {
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Copper Scrap Metal Melbourne</h1>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Copper Scrap Metal</h1>
             <p className="text-xl md:text-2xl mb-4 leading-relaxed opacity-90">
               Top Dollar for All Types of Copper Scrap | Free Pickup | Instant Payment
             </p>
@@ -216,21 +217,22 @@ const CopperScrapMetal = () => {
       {/* Main Introduction */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <img src={copperCables} alt="Copper Scrap Metal Melbourne" className="rounded-2xl shadow-xl w-full" />
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Leading Copper Scrap Buyers</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Opera Copper Recycling has been Melbourne's trusted copper scrap buyer for years. We offer competitive prices for all types of copper scrap, from bare bright copper wire to oxidized copper pipes and everything in between.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  We understand that copper is valuable, and we ensure you get fair market prices based on current LME rates. Our certified scales, transparent weighing process, and immediate payment have made us the preferred choice for thousands of customers.
+                </p>
+              </div>
+              <div>
+                <img src={copperWire} alt="Copper Scrap Metal" className="rounded-2xl shadow-xl w-full object-cover" />
+              </div>
             </div>
-            <div>
-              <h2 className="text-4xl font-heading font-bold mb-6">Melbourne's Leading Copper Scrap Buyers</h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed text-lg">
-                Opera Copper Recycling has been Melbourne's trusted copper scrap buyer for years. We offer competitive prices for all types of copper scrap, from bare bright copper wire to oxidized copper pipes and everything in between.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Whether you're an electrician with copper wire offcuts, a plumber with old copper pipes, a demolition contractor with building copper, or a homeowner renovating your property, we provide instant payment and professional service every time.
-              </p>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                We understand that copper is valuable, and we ensure you get fair market prices based on current LME rates. Our certified scales, transparent weighing process, and immediate payment have made us the preferred choice for thousands of Melbourne customers.
-              </p>
+            <div className="mb-16">
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
                   <a href="tel:+61452367372">Call For Today's Price</a>
@@ -255,10 +257,10 @@ const CopperScrapMetal = () => {
 
             <div className="grid md:grid-cols-2 gap-6">
               {copperGrades.map((grade, index) => (
-                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{grade.name}</h3>
-                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
+                <Card key={index} className="p-6 sm:p-8 hover:shadow-xl transition-shadow">
+                  <div className="mb-4">
+                    <h3 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2 break-words">{grade.name}</h3>
+                    <span className="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                       {grade.price}
                     </span>
                   </div>

@@ -170,7 +170,7 @@ const AluminiumScrapPrice = () => {
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Aluminium Scrap Price Melbourne</h1>
+          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Aluminium Scrap</h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
             Get the best aluminum scrap prices in Melbourne. We buy all grades including extrusions, cans, wheels, cast aluminum, and industrial scrap. Instant payment and free pickup available.
           </p>
@@ -200,19 +200,19 @@ const AluminiumScrapPrice = () => {
       {/* Main Introduction */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 text-center">Melbourne's Trusted Aluminum Scrap Buyers</h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Trusted Aluminum Scrap Buyers</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling is Melbourne's premier aluminum scrap buyer, offering competitive market-based prices for all types of aluminum materials. Whether you have construction extrusions, beverage cans, automotive wheels, or industrial aluminum scrap, we provide transparent pricing and professional service.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Our team has extensive experience in aluminum grading and recycling, ensuring you receive fair market value for your materials. We accept both clean and mixed aluminum loads, with premium pricing for sorted, contamination-free materials.
                 </p>
               </div>
               <div>
-                <img src={aluminumScrap} alt="Aluminum Scrap" className="rounded-2xl shadow-xl w-full h-full object-cover" />
+                <img src={aluminumScrap} alt="Aluminum Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
               </div>
             </div>
           </div>
@@ -229,10 +229,10 @@ const AluminiumScrapPrice = () => {
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {aluminumGrades.map((grade, index) => (
-                <Card key={index} className="p-8 hover:shadow-xl transition-shadow">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="text-2xl font-heading font-bold text-foreground">{grade.name}</h3>
-                    <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold whitespace-nowrap ml-2">
+                <Card key={index} className="p-6 sm:p-8 hover:shadow-xl transition-shadow">
+                  <div className="mb-4">
+                    <h3 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2 break-words">{grade.name}</h3>
+                    <span className="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                       {grade.price}
                     </span>
                   </div>
