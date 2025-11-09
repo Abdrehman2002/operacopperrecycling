@@ -19,7 +19,7 @@ const AluminiumScrapPrice = () => {
       grade: 'Cast Grade',
       description: 'Aluminum castings from automotive, machinery, and industrial applications. Heavier and denser than extrusions.',
       examples: ['Engine blocks', 'Transmission housings', 'Machinery parts', 'Cast components', 'Automotive castings'],
-      price: 'Mid-Range Rate'
+      price: 'Mid-RangeRate'
     },
     {
       name: 'Aluminum Wheels & Rims',
