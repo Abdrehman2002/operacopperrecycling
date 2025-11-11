@@ -50,11 +50,7 @@ const CarBatteryDisposal = () => {
                 </p>
               </div>
               <div>
-                <img
-                  src={batteriesImage}
-                  alt="Car Battery Recycling"
-                  className="w-full rounded-2xl shadow-xl object-cover"
-                />
+                <img src={batteriesImage} alt="Car Battery Recycling" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
 

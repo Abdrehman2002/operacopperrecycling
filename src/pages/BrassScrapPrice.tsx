@@ -226,7 +226,7 @@ const BrassScrapPrice = () => {
                 </p>
               </div>
               <div>
-                <img src={brassScrap} alt="Brass Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={brassScrap} alt="Brass Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
           </div>

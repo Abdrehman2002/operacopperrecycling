@@ -233,7 +233,7 @@ const InsulatedWireScrapPrice = () => {
                 </p>
               </div>
               <div>
-                <img src={insulatedWire} alt="Insulated Wire Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={insulatedWire} alt="Insulated Wire Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
           </div>

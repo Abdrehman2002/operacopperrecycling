@@ -50,11 +50,7 @@ const ScrapACUnits = () => {
                 </p>
               </div>
               <div>
-                <img
-                  src={acImage}
-                  alt="AC Unit Recycling"
-                  className="w-full rounded-2xl shadow-xl object-cover"
-                />
+                <img src={acImage} alt="AC Unit Recycling" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
 

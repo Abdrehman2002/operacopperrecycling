@@ -232,7 +232,7 @@ const StainlessSteelScrapPrice = () => {
                 </p>
               </div>
               <div>
-                <img src={stainlessSteel} alt="Stainless Steel Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={stainlessSteel} alt="Stainless Steel Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
           </div>

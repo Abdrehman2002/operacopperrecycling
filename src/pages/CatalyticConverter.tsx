@@ -50,11 +50,7 @@ const CatalyticConverter = () => {
                 </p>
               </div>
               <div>
-                <img
-                  src={catalyticConverterImage}
-                  alt="Catalytic Converter Recycling"
-                  className="w-full rounded-2xl shadow-xl object-cover"
-                />
+                <img src={catalyticConverterImage} alt="Catalytic Converter Recycling" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
 

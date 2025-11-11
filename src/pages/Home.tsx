@@ -382,8 +382,10 @@ const Home = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {whyChooseUs.map((item, index) => (
               <Card key={index} className="p-5 sm:p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-secondary group bg-gradient-to-br from-card to-card/80 shadow-elevated">
-                <div className="text-secondary mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                <h3 className="font-heading font-bold text-lg sm:text-xl mb-2 sm:mb-3 group-hover:text-secondary transition-colors">{item.title}</h3>
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="text-secondary group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                  <h3 className="font-heading font-bold text-lg sm:text-xl group-hover:text-secondary transition-colors">{item.title}</h3>
+                </div>
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{item.description}</p>
               </Card>
             ))}

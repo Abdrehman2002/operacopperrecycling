@@ -232,7 +232,7 @@ const CableWires = () => {
                 </p>
               </div>
               <div>
-                <img src={copperCables} alt="Cable Wires" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={copperCables} alt="Cable Wires" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
           </div>

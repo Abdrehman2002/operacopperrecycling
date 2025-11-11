@@ -212,7 +212,7 @@ const AluminiumScrapPrice = () => {
                 </p>
               </div>
               <div>
-                <img src={aluminumScrap} alt="Aluminum Scrap" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={aluminumScrap} alt="Aluminum Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
           </div>
