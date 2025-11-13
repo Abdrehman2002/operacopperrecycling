@@ -113,30 +113,42 @@ const Footer = () => {
               <span className="w-1 h-6 bg-secondary rounded-full"></span>
               Our Services
             </h4>
-            <ul className="space-y-2 sm:space-y-3 text-sm text-secondary">
-              <li className="flex items-center gap-2">
-                <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
-                Copper Recycling
+            <ul className="space-y-2 sm:space-y-3 text-sm">
+              <li>
+                <Link to="/copper-scrap-metal" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Copper Recycling</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
-                Brass Scrap Removal
+              <li>
+                <Link to="/brass-scrap-price" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Brass Scrap Removal</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
-                Cable Wire Collection
+              <li>
+                <Link to="/cable-wires" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Cable Wire Collection</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
-                Aluminum Recycling
+              <li>
+                <Link to="/aluminium-scrap-price" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Aluminum Recycling</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
-                Stainless Steel Scrap
+              <li>
+                <Link to="/stainless-steel-scrap-price" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiDollarSign className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Stainless Steel Scrap</span>
+                </Link>
               </li>
-              <li className="flex items-center gap-2">
-                <FiClock className="w-4 h-4 text-secondary flex-shrink-0" />
-                Free Pickup Service
+              <li>
+                <Link to="/services" className="flex items-center gap-2 text-secondary hover:text-primary-foreground transition-all group focus-ring rounded px-2 -mx-2">
+                  <FiClock className="w-4 h-4 text-secondary flex-shrink-0" />
+                  <span className="group-hover:translate-x-1 transition-transform">Free Pickup Service</span>
+                </Link>
               </li>
             </ul>
           </div>

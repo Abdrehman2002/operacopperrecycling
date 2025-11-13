@@ -211,18 +211,19 @@ const StainlessSteelScrapPrice = () => {
             </div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="hidden sm:inline">Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="sm:hidden">Mon-Fri: 7-5 | Sat: 10-4</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Introduction */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Stainless Steel Scrap Experts</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling offers premium prices for all grades of stainless steel scrap. Whether you have 304 kitchen equipment, 316 marine-grade materials, or mixed stainless steel, we provide expert grading and fair market pricing based on nickel and chromium content.
@@ -235,12 +236,22 @@ const StainlessSteelScrapPrice = () => {
                 <img src={stainlessSteel} alt="Stainless Steel Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
+            <div className="mb-16">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
+                  <a href="tel:+61452367372">Call For Today's Price</a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold">
+                  <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Stainless Grades Detail */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Stainless Steel Grades We Buy</h2>
@@ -280,7 +291,7 @@ const StainlessSteelScrapPrice = () => {
       </section>
 
       {/* Why Choose Us Benefits */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Why Choose Opera Copper Recycling?</h2>
@@ -301,7 +312,7 @@ const StainlessSteelScrapPrice = () => {
       </section>
 
       {/* Pricing Factors */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">What Affects Stainless Steel Prices?</h2>
@@ -321,7 +332,7 @@ const StainlessSteelScrapPrice = () => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Who We Serve</h2>
@@ -346,7 +357,7 @@ const StainlessSteelScrapPrice = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Frequently Asked Questions</h2>
@@ -369,23 +380,6 @@ const StainlessSteelScrapPrice = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get Premium Prices for Stainless Steel</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
-            Contact Opera Copper Recycling today for top stainless steel prices in Melbourne. Professional XRF testing, expert grading, instant payment, and free pickup for qualifying loads.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
-              <Link to="/contact">Request Quote</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

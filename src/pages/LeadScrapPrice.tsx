@@ -8,46 +8,46 @@ import copperMaterials from '@/assets/copper-materials.jpg';
 const LeadScrapPrice = () => {
   const leadTypes = [
     {
-      name: 'Lead Acid Batteries',
+      name: 'Lead Batteries',
+      grade: 'Lead Acid Batteries',
       description: 'Automotive, industrial, and UPS batteries containing lead plates. One of the most commonly recycled lead materials with excellent recovery rates.',
-      examples: ['Car batteries', 'Truck batteries', 'Industrial batteries', 'UPS batteries', 'Forklift batteries', 'Marine batteries'],
-      price: 'Standard Market Rate',
-      note: 'Documentation may be required for large quantities'
+      examples: ['Car batteries', 'Truck batteries', 'Industrial batteries', 'UPS batteries'],
+      price: 'Standard Market Rate'
     },
     {
-      name: 'Lead Piping & Sheeting',
-      description: 'Lead pipes, sheets, and flashing from plumbing and construction applications. Must be clean and free of contamination.',
-      examples: ['Lead pipes', 'Lead sheeting', 'Lead flashing', 'Plumbing lead', 'Roof flashing', 'Lead linings'],
-      price: 'Good Market Rate',
-      note: 'Higher pricing for clean, sorted material'
+      name: 'Lead Pipes',
+      grade: 'Lead Piping',
+      description: 'Lead pipes from plumbing and construction applications. Must be clean and free of contamination for best pricing.',
+      examples: ['Lead pipes', 'Plumbing lead', 'Water pipes', 'Drainage pipes'],
+      price: 'Good Market Rate'
     },
     {
-      name: 'Lead Wheel Weights',
-      description: 'Clip-on and adhesive wheel balancing weights from automotive applications. Common source of lead scrap.',
-      examples: ['Clip-on weights', 'Stick-on weights', 'Tire weights', 'Balancing weights'],
-      price: 'Standard Rate',
-      note: 'Must be separated from steel clips for best pricing'
+      name: 'Lead Sheet',
+      grade: 'Lead Sheeting',
+      description: 'Lead sheets, flashing, and linings from construction and roofing applications. Higher pricing for clean, sorted material.',
+      examples: ['Lead sheeting', 'Lead flashing', 'Roof flashing', 'Lead linings'],
+      price: 'Premium Rate'
+    },
+    {
+      name: 'Lead Weights',
+      grade: 'Lead Counterweights',
+      description: 'Wheel weights, counterweights, and ballast used in automotive and industrial applications. Common source of lead scrap.',
+      examples: ['Wheel weights', 'Elevator weights', 'Crane counterweights', 'Industrial weights'],
+      price: 'Standard Rate'
     },
     {
       name: 'Lead Cable Sheathing',
-      description: 'Lead sheathing and covering from electrical and telecommunications cables. Valuable source of clean lead.',
+      grade: 'Cable Sheathing',
+      description: 'Lead sheathing and covering from electrical and telecommunications cables. Valuable source of clean lead with good recovery rates.',
       examples: ['Telecommunications cable', 'Power cable sheathing', 'Underground cable', 'Lead-covered wire'],
-      price: 'Good Market Rate',
-      note: 'Pricing varies based on lead content'
+      price: 'Good Rate'
     },
     {
-      name: 'Lead Roofing & Building Materials',
-      description: 'Lead roofing materials, gutters, and architectural components. Should be free of tar and excessive contamination.',
-      examples: ['Lead roofing', 'Lead gutters', 'Lead downpipes', 'Architectural lead', 'Lead valleys'],
-      price: 'Variable Rate',
-      note: 'Cleanliness affects pricing significantly'
-    },
-    {
-      name: 'Lead Counterweights & Ballast',
-      description: 'Lead weights and ballast used in machinery, elevators, and various industrial applications.',
-      examples: ['Elevator weights', 'Crane counterweights', 'Machinery ballast', 'Industrial weights', 'Lead blocks'],
-      price: 'Good Market Rate',
-      note: 'Documentation may be required for large loads'
+      name: 'Mixed Lead Scrap',
+      grade: 'Mixed Lead',
+      description: 'Mixed lead materials including roofing, gutters, and architectural components. Pricing depends on cleanliness and contamination level.',
+      examples: ['Lead roofing', 'Lead gutters', 'Architectural lead', 'Mixed lead materials'],
+      price: 'Variable Rate'
     },
   ];
 
@@ -76,24 +76,61 @@ const LeadScrapPrice = () => {
 
   const benefits = [
     {
-      icon: <FiDollarSign className="w-12 h-12 text-secondary" />,
+      icon: <FiDollarSign className="w-8 h-8" />,
       title: 'Competitive Lead Prices',
-      description: 'Fair market pricing for all types of lead scrap based on current commodity rates and material quality.',
+      description: 'Fair market pricing for all types of lead scrap based on current commodity rates and material quality. Updated daily to reflect global market values.'
     },
     {
-      icon: <FiTruck className="w-12 h-12 text-secondary" />,
-      title: 'Safe Collection',
-      description: 'Professional pickup service with proper equipment and safety procedures for handling lead materials.',
+      icon: <FiTruck className="w-8 h-8" />,
+      title: 'Safe Collection Service',
+      description: 'Professional pickup service with proper equipment and safety procedures for handling lead materials. We come to you across Melbourne.'
     },
     {
-      icon: <FiShield className="w-12 h-12 text-secondary" />,
-      title: 'Environmentally Responsible',
-      description: 'Lead recycling prevents environmental contamination and conserves natural resources through proper processing.',
+      icon: <FiClock className="w-8 h-8" />,
+      title: 'Same-Day Payment',
+      description: 'Instant cash or immediate bank transfer when we collect. No waiting periods or delayed payments - get paid on the spot.'
     },
     {
-      icon: <FiAward className="w-12 h-12 text-secondary" />,
-      title: 'Certified Processing',
-      description: 'Licensed facility with certified processes for safe and compliant lead scrap recycling.',
+      icon: <FiAward className="w-8 h-8" />,
+      title: '15+ Years Experience',
+      description: 'Trusted lead buyers since 2009. Serving thousands of satisfied customers including automotive shops, plumbers, and industrial clients.'
+    },
+    {
+      icon: <FiShield className="w-8 h-8" />,
+      title: 'Licensed & Insured',
+      description: 'Fully certified scrap metal dealers with EPA compliance. All necessary permits, insurance, and proper documentation for safe lead handling.'
+    },
+    {
+      icon: <FiCheck className="w-8 h-8" />,
+      title: 'Certified Scales',
+      description: 'Transparent weighing with government-certified scales. You watch the weighing process and see the exact weight of your lead scrap.'
+    },
+  ];
+
+  const whoWeServe = [
+    {
+      title: 'Automotive Workshops & Mechanics',
+      description: 'We buy lead batteries, wheel weights, and automotive lead scrap. Regular pickup schedules available for busy workshops.'
+    },
+    {
+      title: 'Plumbers & HVAC Contractors',
+      description: 'We buy lead pipes, lead sheeting, and plumbing lead materials. We understand tradespeople need quick, reliable service.'
+    },
+    {
+      title: 'Demolition & Construction Sites',
+      description: 'Large-scale lead removal from demolition projects. We handle bulk lead from piping, roofing, and building materials safely.'
+    },
+    {
+      title: 'Industrial Facilities & Manufacturers',
+      description: 'Industrial lead scrap from production processes, counterweights, and machinery. Scheduled pickups for ongoing operations.'
+    },
+    {
+      title: 'Electricians & Cable Companies',
+      description: 'Lead cable sheathing and telecommunications lead materials. We process cable lead with competitive pricing based on content.'
+    },
+    {
+      title: 'Scrap Dealers & Battery Recyclers',
+      description: 'Wholesale lead buyers for other recyclers and dealers. Competitive bulk pricing available for battery recycling operations.'
     },
   ];
 
@@ -136,29 +173,37 @@ const LeadScrapPrice = () => {
     <div className="min-h-screen">
       {/* Header */}
       <section className="bg-primary text-primary-foreground py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Lead Scrap</h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 leading-relaxed">
-            Competitive lead scrap prices for batteries, pipes, sheeting, and weights. Safe, certified, and environmentally responsible lead recycling in Melbourne.
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Lead Scrap Metal</h1>
+            <p className="text-xl md:text-2xl mb-4 leading-relaxed opacity-90">
+              Top Dollar for All Types of Lead Scrap | Safe Pickup | Instant Payment
+            </p>
+            <p className="text-lg opacity-80">
+              Melbourne's Most Trusted Lead Buyers Since 2009 - Serving Automotive, Plumbers, Contractors & Industrial Clients
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Quick Contact Bar */}
-      <section className="bg-secondary text-primary-foreground py-4">
+      <section className="py-4 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-8 text-sm md:text-base">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-center">
             <div className="flex items-center gap-2">
               <FiPhone className="w-5 h-5" />
-              <a href="tel:+61452367372" className="hover:underline font-semibold">+61 452 367 372</a>
+              <a href="tel:+61452367372" className="font-semibold hover:opacity-80">+61 452 367 372</a>
             </div>
+            <div className="hidden md:block">|</div>
             <div className="flex items-center gap-2">
               <FiMapPin className="w-5 h-5" />
-              <span>Melbourne, VIC</span>
+              <span>Serving All Melbourne Suburbs</span>
             </div>
+            <div className="hidden md:block">|</div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="hidden sm:inline">Mon-Fri: 7 AM-5 PM | Sat: 10 AM-4 PM</span>
+              <span className="sm:hidden">Mon-Fri: 7-5 | Sat: 10-4</span>
             </div>
           </div>
         </div>
@@ -187,21 +232,31 @@ const LeadScrapPrice = () => {
       </section>
 
       {/* Main Introduction */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 text-center">Certified Lead Scrap Recycling in Melbourne</h2>
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Leading Lead Scrap Buyers</h2>
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  Opera Copper Recycling provides professional lead scrap recycling services with competitive pricing and strict compliance with environmental regulations. We purchase all types of lead materials including batteries, pipes, sheeting, weights, and cable sheathing.
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Opera Copper Recycling has been Melbourne's trusted lead scrap buyer for years. We offer competitive prices for all types of lead scrap, from lead batteries to lead pipes, sheeting, weights, and cable sheathing.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our licensed facility and trained staff ensure safe handling and processing of lead scrap. We provide transparent pricing based on current market rates while maintaining the highest safety and environmental standards.
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  We understand that lead recycling requires special handling and compliance. Our licensed facility and trained staff ensure safe processing while providing fair market prices based on current LME rates. Certified scales, transparent weighing, and immediate payment have made us the preferred choice for thousands of customers.
                 </p>
               </div>
-              <div>
-                <img src={copperMaterials} alt="Lead Materials" className="rounded-2xl shadow-xl w-full h-full object-cover" />
+              <div className="flex items-start">
+                <img src={copperMaterials} alt="Lead Scrap Metal" className="rounded-2xl shadow-xl w-full aspect-square max-h-[400px] object-cover" />
+              </div>
+            </div>
+            <div className="mb-16">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
+                  <a href="tel:+61452367372">Call For Today's Price</a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold">
+                  <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                </Button>
               </div>
             </div>
           </div>
@@ -209,7 +264,7 @@ const LeadScrapPrice = () => {
       </section>
 
       {/* Lead Types Detail */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Types of Lead Scrap We Buy</h2>
@@ -225,8 +280,9 @@ const LeadScrapPrice = () => {
                       {type.price}
                     </span>
                   </div>
+                  <p className="text-sm font-semibold text-secondary mb-3">{type.grade}</p>
                   <p className="text-muted-foreground leading-relaxed mb-4">{type.description}</p>
-                  <div className="border-t border-border pt-4 mb-4">
+                  <div className="border-t border-border pt-4">
                     <p className="text-sm font-semibold mb-2 text-foreground">Common Examples:</p>
                     <ul className="space-y-1">
                       {type.examples.map((example, idx) => (
@@ -237,9 +293,6 @@ const LeadScrapPrice = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-accent/10 p-3 rounded">
-                    <p className="text-xs text-muted-foreground"><strong>Note:</strong> {type.note}</p>
-                  </div>
                 </Card>
               ))}
             </div>
@@ -248,7 +301,7 @@ const LeadScrapPrice = () => {
       </section>
 
       {/* Safety & Compliance */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Safety & Compliance</h2>
@@ -273,19 +326,39 @@ const LeadScrapPrice = () => {
       </section>
 
       {/* Why Choose Us Benefits */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Why Choose Opera Copper Recycling?</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12">
-              Licensed, certified, and committed to safe lead scrap recycling
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Why Choose Opera Copper Recycling</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Melbourne's most trusted lead scrap buyers with unmatched service and pricing
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className="flex justify-center mb-4">{benefit.icon}</div>
-                  <h3 className="text-xl font-heading font-bold mb-3">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow border-t-4 border-t-secondary">
+                <div className="text-secondary mb-4 flex justify-center">{benefit.icon}</div>
+                <h3 className="font-heading font-bold text-xl mb-3">{benefit.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-12 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Who We Serve</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {whoWeServe.map((customer, index) => (
+                <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                    <FiUsers className="w-6 h-6 text-secondary" />
+                  </div>
+                  <h3 className="font-heading font-bold text-lg mb-3">{customer.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{customer.description}</p>
                 </Card>
               ))}
             </div>
@@ -294,20 +367,22 @@ const LeadScrapPrice = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12">
-              Common questions about lead scrap recycling in Melbourne
-            </p>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-muted-foreground">
+                Everything you need to know about selling lead scrap in Melbourne
+              </p>
+            </div>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-card border rounded-lg px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold hover:text-secondary">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-left font-semibold hover:text-secondary py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -317,23 +392,31 @@ const LeadScrapPrice = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Sell Your Lead Scrap Safely & Responsibly</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
-            Contact Opera Copper Recycling for safe, compliant lead scrap recycling with competitive prices. Professional collection, certified processing, and immediate payment.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
-              <Link to="/contact">Request Quote</Link>
-            </Button>
+      {/* Image Section */}
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+            <div>
+              <h2 className="text-3xl font-heading font-bold mb-4">Simple, Fast, Professional</h2>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                Our lead recycling process is straightforward and transparent. We assess your lead materials, grade them fairly, weigh them on certified scales, and provide instant payment.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {['Free phone quote available', 'No hidden fees or charges', 'Transparent grading explained', 'Watch the weighing process', 'Instant cash or bank transfer'].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <FiCheck className="w-5 h-5 text-secondary mt-0.5" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <img src={copperMaterials} alt="Lead Recycling Process" className="rounded-2xl shadow-xl w-full" />
+            </div>
           </div>
         </div>
       </section>
+
     </div>
   );
 };

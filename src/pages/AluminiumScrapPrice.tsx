@@ -19,7 +19,7 @@ const AluminiumScrapPrice = () => {
       grade: 'Cast Grade',
       description: 'Aluminum castings from automotive, machinery, and industrial applications. Heavier and denser than extrusions.',
       examples: ['Engine blocks', 'Transmission housings', 'Machinery parts', 'Cast components', 'Automotive castings'],
-      price: 'Mid-RangeRate'
+      price: 'Mid-Range Rate'
     },
     {
       name: 'Aluminum Wheels & Rims',
@@ -34,6 +34,20 @@ const AluminiumScrapPrice = () => {
       description: 'Electrical conductor aluminum wire and cable. Higher value when insulation is removed, but we accept insulated as well.',
       examples: ['Electrical wire', 'Power cables', 'Conductor cables', 'Overhead lines'],
       price: 'Variable Rate (Based on Insulation)'
+    },
+    {
+      name: 'Aluminum Cans (UBC)',
+      grade: 'Used Beverage Cans',
+      description: 'Aluminum beverage cans and containers. One of the most recycled aluminum products. Best pricing for clean, empty cans.',
+      examples: ['Soft drink cans', 'Beer cans', 'Energy drink cans', 'Beverage containers', 'Food cans'],
+      price: 'Standard Market Rate'
+    },
+    {
+      name: 'Mixed Aluminum Scrap',
+      grade: 'Mixed Grade',
+      description: 'Mixed aluminum materials including siding, gutters, sheet metal, and various aluminum items. Sorted by type for best value.',
+      examples: ['Aluminum siding', 'Gutters and downpipes', 'Sheet aluminum', 'Aluminum panels', 'Mixed construction materials'],
+      price: 'Variable Rate (Based on Cleanliness)'
     },
   ];
 
@@ -191,18 +205,19 @@ const AluminiumScrapPrice = () => {
             </div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="hidden sm:inline">Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="sm:hidden">Mon-Fri: 7-5 | Sat: 10-4</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Introduction */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Trusted Aluminum Scrap Buyers</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling is Melbourne's premier aluminum scrap buyer, offering competitive market-based prices for all types of aluminum materials. Whether you have construction extrusions, beverage cans, automotive wheels, or industrial aluminum scrap, we provide transparent pricing and professional service.
@@ -215,12 +230,22 @@ const AluminiumScrapPrice = () => {
                 <img src={aluminumScrap} alt="Aluminum Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
+            <div className="mb-16">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
+                  <a href="tel:+61452367372">Call For Today's Price</a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold">
+                  <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Aluminum Grades Detail */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Aluminum Grades & Types We Buy</h2>
@@ -257,7 +282,7 @@ const AluminiumScrapPrice = () => {
       </section>
 
       {/* Why Choose Us Benefits */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Why Choose Opera Copper Recycling?</h2>
@@ -278,7 +303,7 @@ const AluminiumScrapPrice = () => {
       </section>
 
       {/* Pricing Factors */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">What Affects Aluminum Scrap Prices?</h2>
@@ -298,7 +323,7 @@ const AluminiumScrapPrice = () => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Who We Serve</h2>
@@ -323,7 +348,7 @@ const AluminiumScrapPrice = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Frequently Asked Questions</h2>
@@ -346,23 +371,6 @@ const AluminiumScrapPrice = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get the Best Price for Your Aluminum Scrap</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
-            Contact Opera Copper Recycling today for current aluminum prices and free pickup service across Melbourne. Professional service, instant payment, and environmentally responsible recycling.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
-              <Link to="/contact">Request Quote Online</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

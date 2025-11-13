@@ -208,18 +208,19 @@ const CopperScrapMetal = () => {
             <div className="hidden md:block">|</div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Mon-Fri: 7 AM-5 PM | Sat: 10 AM-4 PM</span>
+              <span className="hidden sm:inline">Mon-Fri: 7 AM-5 PM | Sat: 10 AM-4 PM</span>
+              <span className="sm:hidden">Mon-Fri: 7-5 | Sat: 10-4</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Introduction */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Leading Copper Scrap Buyers</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling has been Melbourne's trusted copper scrap buyer for years. We offer competitive prices for all types of copper scrap, from bare bright copper wire to oxidized copper pipes and everything in between.
@@ -229,11 +230,11 @@ const CopperScrapMetal = () => {
                 </p>
               </div>
               <div>
-                <img src={copperWire} alt="Copper Scrap Metal" className="rounded-2xl shadow-xl w-full object-cover" />
+                <img src={copperWire} alt="Copper Scrap Metal" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
             <div className="mb-16">
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
                   <a href="tel:+61452367372">Call For Today's Price</a>
                 </Button>
@@ -247,7 +248,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* Copper Grades Detailed */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -285,7 +286,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Why Choose Opera Copper Recycling</h2>
@@ -306,7 +307,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* Pricing Factors */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-heading font-bold mb-8 text-center">What Affects Copper Scrap Prices?</h2>
@@ -336,7 +337,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Who We Serve</h2>
@@ -356,7 +357,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -382,7 +383,7 @@ const CopperScrapMetal = () => {
       </section>
 
       {/* Image Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
             <div>
@@ -406,24 +407,6 @@ const CopperScrapMetal = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Ready to Sell Your Copper Scrap?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
-            Contact Opera Copper Recycling today for the best copper scrap prices in Melbourne. Free pickup, instant payment, and professional service guaranteed.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
-              <Link to="/contact">Request Quote Online</Link>
-            </Button>
-          </div>
-          <p className="mt-6 text-sm opacity-75">Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM | Serving All Melbourne Suburbs</p>
-        </div>
-      </section>
     </div>
   );
 };

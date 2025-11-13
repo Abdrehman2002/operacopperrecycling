@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { FiCheck, FiPhone, FiMapPin, FiClock, FiDollarSign, FiTruck, FiRefreshCw, FiAward, FiUsers, FiZap } from 'react-icons/fi';
+import { FiCheck, FiPhone, FiMapPin, FiClock, FiDollarSign, FiTruck, FiRefreshCw, FiAward, FiUsers, FiZap, FiShield } from 'react-icons/fi';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import copperCables from '@/assets/copper-cables.jpg';
 import insulatedWire from '@/assets/insulated wire.jpg';
@@ -60,34 +60,34 @@ const InsulatedWireScrapPrice = () => {
 
   const benefits = [
     {
-      icon: <FiDollarSign className="w-12 h-12 text-secondary" />,
+      icon: <FiDollarSign className="w-8 h-8" />,
       title: 'Competitive Wire Prices',
       description: 'Fair pricing based on copper content and current market rates. We pay some of Melbourne\'s best prices for insulated wire scrap.',
     },
     {
-      icon: <FiTruck className="w-12 h-12 text-secondary" />,
+      icon: <FiTruck className="w-8 h-8" />,
       title: 'Free Wire Collection',
       description: 'Free pickup available for qualifying quantities of insulated wire across Melbourne. We make wire recycling convenient.',
     },
     {
-      icon: <FiZap className="w-12 h-12 text-secondary" />,
+      icon: <FiZap className="w-8 h-8" />,
       title: 'All Wire Types Accepted',
       description: 'We buy all types of insulated wire - romex, THHN, extension cords, appliance cords, and more. No need to strip insulation.',
     },
     {
-      icon: <FiAward className="w-12 h-12 text-secondary" />,
+      icon: <FiAward className="w-8 h-8" />,
       title: 'Expert Grading',
       description: 'Accurate assessment of wire types and copper content ensures you receive correct pricing for your materials.',
     },
     {
-      icon: <FiRefreshCw className="w-12 h-12 text-secondary" />,
-      title: 'Environmentally Responsible',
-      description: 'Wire recycling recovers valuable copper while preventing waste. We process insulation and recover copper efficiently.',
+      icon: <FiShield className="w-8 h-8" />,
+      title: 'Licensed & Insured',
+      description: 'Fully certified scrap metal dealers with EPA compliance. All necessary permits, insurance, and proper documentation.',
     },
     {
-      icon: <FiClock className="w-12 h-12 text-secondary" />,
-      title: 'Instant Payment',
-      description: 'Get paid immediately for your insulated wire scrap. No waiting periods or delayed payments.',
+      icon: <FiClock className="w-8 h-8" />,
+      title: 'Same-Day Payment',
+      description: 'Instant cash or immediate bank transfer when we collect. No waiting periods or delayed payments - get paid on the spot.',
     },
   ];
 
@@ -118,36 +118,30 @@ const InsulatedWireScrapPrice = () => {
     },
   ];
 
-  const customerTypes = [
+  const whoWeServe = [
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Electricians',
-      description: 'Electrical contractors with wire offcuts, old wiring from renovations, and leftover cable from jobs.',
+      title: 'Electricians & Electrical Contractors',
+      description: 'Electrical contractors with wire offcuts, old wiring from renovations, and leftover cable from jobs. Regular pickup schedules available.',
     },
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Construction Companies',
-      description: 'Builders and contractors with electrical waste from new construction, renovations, and demolition projects.',
+      title: 'Construction & Demolition Companies',
+      description: 'Builders and contractors with electrical waste from new construction, renovations, and demolition projects. Large-scale wire removal services.',
     },
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Demolition Contractors',
-      description: 'Demolition companies salvaging electrical wiring and cables from buildings and structures.',
+      title: 'Industrial & Manufacturing Facilities',
+      description: 'Manufacturing plants and factories with old equipment cables, power cables, and industrial wiring. Scheduled pickups for ongoing production.',
     },
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Industrial Facilities',
-      description: 'Manufacturing plants and factories with old equipment cables, power cables, and industrial wiring.',
+      title: 'HVAC & Mechanical Contractors',
+      description: 'HVAC technicians and mechanical contractors with control wiring, power cables, and electrical components from installations and service work.',
     },
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Scrap Collectors',
-      description: 'Individual collectors gathering insulated wire from various sources including renovations and demolitions.',
+      title: 'Renovation & Homeowners',
+      description: 'Property owners and managers with wire from building upgrades, rewiring projects, and tenant improvements. Turn old wire into cash!',
     },
     {
-      icon: <FiUsers className="w-10 h-10 text-secondary" />,
-      title: 'Property Managers',
-      description: 'Property owners and managers with wire from building upgrades, rewiring projects, and tenant improvements.',
+      title: 'Scrap Metal Dealers & Recyclers',
+      description: 'Wholesale insulated wire buyers for other recyclers and dealers. Competitive bulk pricing available for large quantities.',
     },
   ];
 
@@ -212,18 +206,19 @@ const InsulatedWireScrapPrice = () => {
             </div>
             <div className="flex items-center gap-2">
               <FiClock className="w-5 h-5" />
-              <span>Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="hidden sm:inline">Monday to Friday: 7 AM – 5 PM | Saturday: 10 AM – 4 PM</span>
+              <span className="sm:hidden">Mon-Fri: 7-5 | Sat: 10-4</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Introduction */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Leading Insulated Wire Buyer</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                   Opera Copper Recycling offers competitive prices for all types of insulated wire and cable scrap. Whether you have romex from construction, THHN from commercial work, or extension cords from around the house, we provide fair market pricing based on copper content.
@@ -236,12 +231,22 @@ const InsulatedWireScrapPrice = () => {
                 <img src={insulatedWire} alt="Insulated Wire Scrap" className="rounded-2xl shadow-xl w-full object-cover aspect-square max-h-[400px]" />
               </div>
             </div>
+            <div className="mb-16">
+              <div className="flex flex-wrap gap-4 justify-center">
+                <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 font-semibold">
+                  <a href="tel:+61452367372">Call For Today's Price</a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary font-semibold">
+                  <a href="https://wa.me/61452367372" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Wire Types Detail */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Types of Insulated Wire We Buy</h2>
@@ -281,28 +286,28 @@ const InsulatedWireScrapPrice = () => {
       </section>
 
       {/* Why Choose Us Benefits */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Why Choose Opera Copper Recycling?</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12">
-              Melbourne's trusted insulated wire buyer with fair pricing and professional service
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Why Choose Opera Copper Recycling</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Melbourne's most trusted insulated wire buyer with unmatched service and pricing
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className="flex justify-center mb-4">{benefit.icon}</div>
-                  <h3 className="text-xl font-heading font-bold mb-3">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
-                </Card>
-              ))}
-            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow border-t-4 border-t-secondary">
+                <div className="text-secondary mb-4 flex justify-center">{benefit.icon}</div>
+                <h3 className="font-heading font-bold text-xl mb-3">{benefit.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Pricing Factors */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">What Affects Insulated Wire Prices?</h2>
@@ -322,23 +327,18 @@ const InsulatedWireScrapPrice = () => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Who We Serve</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12">
-              Professional wire recycling services for trades, businesses, and collectors across Melbourne
-            </p>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center">Who We Serve</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {customerTypes.map((customer, index) => (
+              {whoWeServe.map((customer, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">{customer.icon}</div>
-                    <div>
-                      <h3 className="text-lg font-heading font-bold mb-2">{customer.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{customer.description}</p>
-                    </div>
+                  <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center mb-4">
+                    <FiUsers className="w-6 h-6 text-secondary" />
                   </div>
+                  <h3 className="font-heading font-bold text-lg mb-3">{customer.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{customer.description}</p>
                 </Card>
               ))}
             </div>
@@ -347,20 +347,22 @@ const InsulatedWireScrapPrice = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-center">Frequently Asked Questions</h2>
-            <p className="text-xl text-center text-muted-foreground mb-12">
-              Common questions about insulated wire scrap pricing in Melbourne
-            </p>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-muted-foreground">
+                Everything you need to know about selling insulated wire scrap in Melbourne
+              </p>
+            </div>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-card border rounded-lg px-6">
-                  <AccordionTrigger className="text-left font-heading font-semibold hover:text-secondary">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-left font-semibold hover:text-secondary py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                  <AccordionContent className="text-muted-foreground leading-relaxed pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -370,23 +372,6 @@ const InsulatedWireScrapPrice = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">Get Top Dollar for Your Insulated Wire</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-secondary leading-relaxed">
-            Contact Opera Copper Recycling today for competitive insulated wire prices and free pickup across Melbourne. No need to strip - bring it as-is for instant payment.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-lg px-10 h-14 font-semibold">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-lg px-10 h-14 font-semibold">
-              <Link to="/contact">Request Quote</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

@@ -197,7 +197,8 @@ const Home = () => {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
               Opera Copper Recycling At Melbourne
             </h1>
-            <div className="inline-block px-4 py-2 bg-accent text-accent-foreground rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
+            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
+              <span className="text-lg sm:text-xl">⚡</span>
               Melbourne's Trusted Service
             </div>
             <div className="flex flex-wrap gap-3 sm:gap-6 mb-4 sm:mb-6 text-sm sm:text-lg md:text-xl font-semibold">
@@ -233,25 +234,10 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Value Proposition */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-muted/50 via-background to-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {valueProps.map((prop, index) => (
-              <Card key={index} className="p-6 sm:p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-t-secondary bg-gradient-to-b from-card to-card/50 card-hover group">
-                <div className="text-secondary mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{prop.icon}</div>
-                <h3 className="font-heading font-bold text-xl sm:text-2xl mb-3 group-hover:text-secondary transition-colors">{prop.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{prop.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-start">
             <div className="order-2 md:order-1">
               <img src={copperMaterials} alt="Opera Copper Recycling Melbourne" className="rounded-2xl shadow-xl w-full" />
             </div>
@@ -283,6 +269,21 @@ const Home = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Proposition */}
+      <section className="py-8 sm:py-10 lg:py-12 bg-gradient-to-br from-muted/50 via-background to-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            {valueProps.map((prop, index) => (
+              <Card key={index} className="p-6 sm:p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-t-secondary bg-gradient-to-b from-card to-card/50 card-hover group">
+                <div className="text-secondary mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{prop.icon}</div>
+                <h3 className="font-heading font-bold text-xl sm:text-2xl mb-3 group-hover:text-secondary transition-colors">{prop.title}</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">{prop.description}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -371,7 +372,8 @@ const Home = () => {
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-background via-accent/5 to-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-            <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
+            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
+              <span className="text-lg sm:text-xl">⚡</span>
               Our Advantages
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-3 sm:mb-4 px-4">Why Choose Opera Copper Recycling</h2>
@@ -397,7 +399,8 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-br from-muted/30 via-background to-accent/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-4">
+            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
+              <span className="text-lg sm:text-xl">⚡</span>
               Our Customers
             </div>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Who We Serve</h2>
@@ -428,8 +431,9 @@ const Home = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block px-6 py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-sm font-bold mb-6 border-2 border-secondary/30 hover:scale-105 transition-transform shadow-lg">
-                💬 Got Questions?
+              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg hover:scale-105 transition-transform">
+                <span className="text-lg sm:text-xl">💬</span>
+                Got Questions?
               </div>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
                 Frequently Asked Questions
@@ -484,7 +488,8 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-8 sm:mb-12">
-              <div className="inline-block px-4 py-2 bg-secondary/10 text-secondary rounded-full text-xs sm:text-sm font-semibold mb-4">
+              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
+                <span className="text-lg sm:text-xl">⚡</span>
                 Get In Touch
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4">Request a Quote</h2>
@@ -602,24 +607,6 @@ const Home = () => {
                 </p>
               </form>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6 px-4">Ready to Turn Your Scrap into Cash?</h2>
-          <p className="text-base sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto text-secondary leading-relaxed px-4">
-            Contact Opera Copper Recycling today for fast, honest, and hassle-free metal recycling services in Melbourne. Free pickup and same-day payment available!
-          </p>
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-primary text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">
-              <a href="tel:+61452367372">Call +61 452 367 372</a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-primary text-base sm:text-lg px-6 sm:px-10 h-12 sm:h-14 font-semibold w-full sm:w-auto">
-              <Link to="/contact">Request Quote</Link>
-            </Button>
           </div>
         </div>
       </section>
