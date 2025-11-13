@@ -197,8 +197,7 @@ const Home = () => {
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
               Opera Copper Recycling At Melbourne
             </h1>
-            <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-secondary/20 via-secondary/10 to-secondary/20 text-secondary rounded-full text-xs sm:text-sm font-bold mb-4 sm:mb-6 border-2 border-secondary/30 shadow-lg">
-              <span className="text-lg sm:text-xl">⚡</span>
+            <div className="inline-block px-4 py-2 bg-accent text-accent-foreground rounded-full text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
               Melbourne's Trusted Service
             </div>
             <div className="flex flex-wrap gap-3 sm:gap-6 mb-4 sm:mb-6 text-sm sm:text-lg md:text-xl font-semibold">
